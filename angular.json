@@ -25,7 +25,9 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "node_modules/reveal.js/dist/reveal.css",
+              "node_modules/reveal.js/dist/theme/black.css"
             ],
             "scripts": []
           },

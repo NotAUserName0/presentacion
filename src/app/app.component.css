@@ -1,0 +1,20 @@
+.title{
+  display: block;
+  text-align: center;
+}
+
+.title-text{
+  background: rgba(0, 0, 0, 0.60);
+  width: 2000px;
+  font-size: 100px;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.tittle-img{
+  height: 600px;
+  width: 100%;
+}
