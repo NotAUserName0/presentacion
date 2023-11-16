@@ -8,13 +8,14 @@
         <div class="title-text" (click)="siguiente()">Despacho Aduanero de Mercancías</div>
       </div>
     </section>
+
     <!-- 1 -->
     <section >
         <div class="info">
           La Ley Aduanera define al despacho aduanero de las mercancías, como “el conjunto de actos y formalidades
           relativos a la entrada de mercancías al territorio nacional y su salida del mismo,
           que de acuerdo con los diferentes <a (click)="pop2 = !pop2">tráficos</a> y <a (click)="pop1 = !pop1">regímenes</a> aduaneros deben
-          realizar en la <a >Aduana</a> las Autoridades Aduaneras y los consignatarios,
+          realizar en la <a (click)="pop3 = !pop3">Aduana</a> las Autoridades Aduaneras y los consignatarios,
           destinatarios, propietarios, poseedores o tenedores en las importaciones y los remitentes en las exportaciones,
           así como los agentes o agencias aduanales.
           (Artículo 35 de la Ley Aduanera).
@@ -28,23 +29,36 @@
 
         <i class="fa-solid fa-play" ></i>
         <i class="fa-solid fa-circle-arrow-left" (click)="goToSlide(0,0)"></i>
-        <i class="fa-solid fa-circle-arrow-right" (click)="goToSlide(2,0)"></i>
+        <i class="fa-solid fa-circle-arrow-right" id="anim" (click)="goToSlide(2,0)"></i>
         <i class="fa-solid fa-circle-pause" ></i>
 
     </section>
 
     <!-- 2 -->
-    <section>
-      Fragmentos
+    <section class="dia2">
+      <div class="init">1. Es un conjunto de actos y formalidades.</div> 
       <div class="fragment" data-fragment-index="0">
-        1 seccion 2
+        2. Relativos a la entrada (importación) y salida (exportación) de <a (click)="pop4 = !pop4">mercancías</a> del territorio nacional.
       </div>
       <div class="fragment" data-fragment-index="1">
-        2 Alerta
+        3. De acuerdo con los diferentes tráficos (medio de transporte) y regímenes aduaneros (destino de las mercancías) establecidos en la Ley Aduanera. 
       </div>
-      <div class="fragment" data-fragment-index="2">
-        3
+      <i class="fa-solid fa-circle-arrow-left" (click)="goToSlide(1,0)"></i>
+      <i class="fa-solid fa-circle-arrow-right" id="anim1" (click)="siguiente()"></i>
+    </section>
+
+    <!-- 3 -->
+    <section>
+      <div class="dia3">
+       <div> 4. ¿Dónde se deben realizar?</div> 
+        <br>
+        La entrada o la salida de mercancías del territorio nacional, deberá efectuarse por lugar autorizado, en día y hora hábil. <br>
+        El Servicio de Administración Tributaria podrá autorizar la entrada al territorio nacional o la salida del mismo por lugar distinto al autorizado, de mercancías que por su naturaleza o volumen no puedan despacharse conforme a lo establecido en el párrafo anterior, o bien, por eficiencia y facilitación en el despacho de las mercancías. (Artículo 10 Ley Aduanera)
       </div>
+      <i class="fa-solid fa-play" ></i>
+        <i class="fa-solid fa-circle-arrow-left" (click)="goToMainSlide(2)"></i>
+        <i class="fa-solid fa-circle-arrow-right" id="anim" (click)="goToMainSlide(4)"></i>
+        <i class="fa-solid fa-circle-pause" ></i>
     </section>
 
 
@@ -54,7 +68,7 @@
 <!-- Pop's diapositiva 1  -->
 <div class="pop1" (click)="pop1 = !pop1" *ngIf="pop1" [@fadeInOut]>
   <div class="contenedor1" (click)="noClose($event)">
-    <i class="fa-solid fa-xmark fa-2x" (click)="pop1 = !pop1"></i>
+    <i class="fa-solid fa-xmark fa-2x res" (click)="pop1 = !pop1"></i>
     <div>Regímenes aduanero, Artículo 90 Ley Aduanera</div>
     <ol class="listaAduana">
       <li>Definitivo</li>
@@ -79,8 +93,32 @@
   </div>
 </div>
 
-<div class="pop2" (click)="pop2 = !pop2" *ngIf="pop2">
-  <div class="contenedor" (click)="noClose($event)">
-    <button (click)="msg()">pruebaB</button>
+<div class="pop2" (click)="pop2 = !pop2" *ngIf="pop2" [@fadeInOut]>
+  <div class="contenedor1 reCont1" (click)="noClose($event)">
+     <i class="fa-solid fa-xmark fa-2x res" (click)="pop2 = !pop2"></i>
+    <div>Tráficos</div>
+    <div>Marítimo, Terrestre, Ferroviario, Aéreo, Fluvial, otros medios de conducción: gasoductos, cables eléctricos etc., y Vía postal, <strong>Artículo 11 Ley Aduanera</strong></div>
+  </div>
+</div>
+
+<div class="pop3" (click)="pop3 = !pop3" *ngIf="pop3" [@fadeInOut]>
+  <div class="contenedor1 reCont1">
+    <i class="fa-solid fa-xmark fa-2x res" (click)="pop3 = !pop3"></i>
+    <div>Aduana</div>
+    <div>
+      Lugar autorizado para la entrada y salida de mercancías al país, en día y hora hábil.
+      (nombre y sede de las 50 Aduanas se señalan en el Artículo 37 Reglamento Interior de la Agencia Nacional de Aduanas de México: 21 fronterizas, 17 marítimas y 12 interiores)
+    </div>
+  </div>
+</div>
+
+<!--Pop's diapositiva 2-->
+
+<div class="pop4" (click)="pop4 = !pop4" *ngIf="pop4" [@fadeInOut]>
+  <div class="contenedor1 reCont1">
+    <i class="fa-solid fa-xmark fa-2x res" (click)="pop4 = !pop4"></i>
+    <div>
+      Se consideran mercancías, los productos, artículos, efectos y cualesquier otros bienes, aun cuando las leyes los consideren inalienables o irreductibles a propiedad particular, <strong>Artículo 2 fracción III, Ley Aduanera</strong>
+    </div>
   </div>
 </div>
