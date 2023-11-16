@@ -89,29 +89,6 @@ i{
   margin: 20px 10px 0px 0px;
 }
 
-.listaAduana{
-  list-style-type: upper-alpha;
-}
-
-ol{
-  font-size: 20px;
-}
-
-.add-info{
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.add-info > div{
-  margin-bottom: 10px;
-}
-
-.ar90{
-
-}
-
 /* POP */
 .pop1{
   position: absolute;
@@ -139,12 +116,50 @@ ol{
   justify-content: center;
 }
 
-.contenedor{
-  width: 400px;
-  height: 500px;
+.contenedor1{
+  font-family: 'Roboto', sans-serif;
+  width: 35%;
+  height: 45%;
   background-color: white;
   z-index: 12;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 15px;
+  position: relative;
+    cursor: default;
 }
+
+.listaAduana{
+  list-style-type: upper-alpha;
+}
+
+.sublistaAduana{
+  list-style-type: upper-roman;
+}
+
+.contenedor1 > div{
+  margin: 0px 0px 10px 0px;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.contenedor1 > ol {
+  padding: 0px 15% 0px 15%;
+  font-size: 25px;
+}
+
+ol{
+  margin: 10px 0px 10px 0px;
+}
+
+.contenedor1 > i{
+  position: absolute;
+  top: 0px;
+  right: 10px;
+}
+
 
 
 /*EFECTS*/

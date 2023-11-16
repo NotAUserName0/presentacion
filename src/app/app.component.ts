@@ -13,9 +13,16 @@ import Swal from "sweetalert2";
       state('void', style({
         opacity: 0
       })),
-      transition('void <=> *', animate(1000)), // Puedes ajustar la duración según tus preferencias
+      transition('void <=> *', animate(200)), // Puedes ajustar la duración según tus preferencias
     ]),
-  ],
+    trigger('pop', [
+      state('void', style({
+        opacity: 0,
+        transform: 'scale(0.8)'
+      })),
+      transition('void <=> *', animate(300)),
+    ]),
+  ]
 })
 export class AppComponent implements AfterViewInit{
   title = 'demoD';
@@ -45,7 +52,7 @@ export class AppComponent implements AfterViewInit{
       //Diapositiva 1
       if(evento['indexh']===1 ){
         this.audio.volume = 0.2
-        //this.audio.play()
+        this.audio.play()
       }else{
         this.audio.pause()
         if(evento['indexv']!==1){

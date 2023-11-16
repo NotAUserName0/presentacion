@@ -10,11 +10,10 @@
     </section>
     <!-- 1 -->
     <section >
-      <section>
         <div class="info">
           La Ley Aduanera define al despacho aduanero de las mercancías, como “el conjunto de actos y formalidades
           relativos a la entrada de mercancías al territorio nacional y su salida del mismo,
-          que de acuerdo con los diferentes <a (click)="pop1 = !pop1">tráficos</a> y <a (click)="pop2 = !pop2">regímenes</a> aduaneros deben
+          que de acuerdo con los diferentes <a (click)="pop2 = !pop2">tráficos</a> y <a (click)="pop1 = !pop1">regímenes</a> aduaneros deben
           realizar en la <a >Aduana</a> las Autoridades Aduaneras y los consignatarios,
           destinatarios, propietarios, poseedores o tenedores en las importaciones y los remitentes en las exportaciones,
           así como los agentes o agencias aduanales.
@@ -31,38 +30,6 @@
         <i class="fa-solid fa-circle-arrow-left" (click)="goToSlide(0,0)"></i>
         <i class="fa-solid fa-circle-arrow-right" (click)="goToSlide(2,0)"></i>
         <i class="fa-solid fa-circle-pause" ></i>
-      </section>
-
-      <section class="add-info">
-        <div class="info" style="font-size: 30px">
-          Artículo 90 Ley Aduanera:
-        </div>
-
-        <div>
-          <ol class="listaAduana">
-            <li>Definitivo</li>
-            <ol>
-              <li>Importación</li>
-              <li>Exportación</li>
-            </ol>
-            <li>Temporal</li>
-            <ol>
-              <li>De importación (Para retornar al extranjero en el mismo estado y Para elaboración, transformación o reparación en programas de maquila o de exportación). </li>
-              <li>De exportación (Para retornar al país en el mismo estado y Para elaboración, transformación o reparación). </li>
-            </ol>
-            <li>Depósito Fiscal </li>
-            <li>Tránsito</li>
-            <ol>
-              <li>Interno (De importación y De exportación) </li>
-              <li>Internacional (Por territorio nacional). </li>
-            </ol>
-            <li>Elaboración, transformación o reparación en recinto fiscalizado </li>
-            <li>Recinto fiscalizado estratégico </li>
-          </ol>
-        </div>
-
-        <i class="fa-solid fa-circle-arrow-left ar90" (click)="goToSlide(1,0)"></i>
-      </section>
 
     </section>
 
@@ -85,9 +52,30 @@
 </div>
 
 <!-- Pop's diapositiva 1  -->
-<div class="pop1" (click)="pop1 = !pop1" *ngIf="pop1">
-  <div class="contenedor" (click)="noClose($event)">
-    <button (click)="msg()">pruebaA</button>
+<div class="pop1" (click)="pop1 = !pop1" *ngIf="pop1" [@fadeInOut]>
+  <div class="contenedor1" (click)="noClose($event)">
+    <i class="fa-solid fa-xmark fa-2x" (click)="pop1 = !pop1"></i>
+    <div>Regímenes aduanero, Artículo 90 Ley Aduanera</div>
+    <ol class="listaAduana">
+      <li>Definitivo</li>
+      <ol class="sublistaAduana">
+        <li>Importación</li>
+        <li>Exportación</li>
+      </ol>
+      <li>Temporal</li>
+      <ol class="sublistaAduana">
+        <li>De importación (Para retornar al extranjero en el mismo estado y Para elaboración, transformación o reparación en programas de maquila o de exportación). </li>
+        <li>De exportación (Para retornar al país en el mismo estado y Para elaboración, transformación o reparación). </li>
+      </ol>
+      <li>Depósito Fiscal </li>
+      <li>Tránsito</li>
+      <ol class="sublistaAduana">
+        <li>Interno (De importación y De exportación) </li>
+        <li>Internacional (Por territorio nacional). </li>
+      </ol>
+      <li>Elaboración, transformación o reparación en recinto fiscalizado </li>
+      <li>Recinto fiscalizado estratégico </li>
+    </ol>
   </div>
 </div>
 
