@@ -9,31 +9,60 @@
       </div>
     </section>
     <!-- 1 -->
-    <section>
-      <div class="info">
-        La Ley Aduanera define al despacho aduanero de las mercancías, como “el conjunto de actos y formalidades
-        relativos a la entrada de mercancías al territorio nacional y su salida del mismo,
-        que de acuerdo con los diferentes <a href="#/1/1">tráficos</a> y <a href="#/1/2">regímenes</a> aduaneros deben
-        realizar en la <a href="#/1/1">Aduana</a> las Autoridades Aduaneras y los consignatarios,
-        destinatarios, propietarios, poseedores o tenedores en las importaciones y los remitentes en las exportaciones,
-        así como los agentes o agencias aduanales.
-        (Artículo 35 de la Ley Aduanera).
-      </div>
-     
-      <div class="images">
-        <div class=" imgs" ></div>
-        <div class=" imgs" ></div>
-        <div class=" imgs" ></div>
-      </div>
+    <section >
+      <section>
+        <div class="info">
+          La Ley Aduanera define al despacho aduanero de las mercancías, como “el conjunto de actos y formalidades
+          relativos a la entrada de mercancías al territorio nacional y su salida del mismo,
+          que de acuerdo con los diferentes <a (click)="pop1 = !pop1">tráficos</a> y <a (click)="pop2 = !pop2">regímenes</a> aduaneros deben
+          realizar en la <a >Aduana</a> las Autoridades Aduaneras y los consignatarios,
+          destinatarios, propietarios, poseedores o tenedores en las importaciones y los remitentes en las exportaciones,
+          así como los agentes o agencias aduanales.
+          (Artículo 35 de la Ley Aduanera).
+        </div>
 
-      <i class="fa-solid fa-circle-arrow-left" (click)="goToSlide(0,0)"></i>
-      <i class="fa-solid fa-circle-arrow-right" (click)="goToSlide(2,0)"></i>
+        <div class="images">
+          <div class=" imgs" ></div>
+          <div class=" imgs" ></div>
+          <div class=" imgs" ></div>
+        </div>
 
-      <section>Aduana</section>
-      <section>Traficos</section>
-      <section>Regimenez</section>
-      
-   
+        <i class="fa-solid fa-play" ></i>
+        <i class="fa-solid fa-circle-arrow-left" (click)="goToSlide(0,0)"></i>
+        <i class="fa-solid fa-circle-arrow-right" (click)="goToSlide(2,0)"></i>
+        <i class="fa-solid fa-circle-pause" ></i>
+      </section>
+
+      <section class="add-info">
+        <div class="info" style="font-size: 30px">
+          Artículo 90 Ley Aduanera:
+        </div>
+
+        <div>
+          <ol class="listaAduana">
+            <li>Definitivo</li>
+            <ol>
+              <li>Importación</li>
+              <li>Exportación</li>
+            </ol>
+            <li>Temporal</li>
+            <ol>
+              <li>De importación (Para retornar al extranjero en el mismo estado y Para elaboración, transformación o reparación en programas de maquila o de exportación). </li>
+              <li>De exportación (Para retornar al país en el mismo estado y Para elaboración, transformación o reparación). </li>
+            </ol>
+            <li>Depósito Fiscal </li>
+            <li>Tránsito</li>
+            <ol>
+              <li>Interno (De importación y De exportación) </li>
+              <li>Internacional (Por territorio nacional). </li>
+            </ol>
+            <li>Elaboración, transformación o reparación en recinto fiscalizado </li>
+            <li>Recinto fiscalizado estratégico </li>
+          </ol>
+        </div>
+
+        <i class="fa-solid fa-circle-arrow-left ar90" (click)="goToSlide(1,0)"></i>
+      </section>
 
     </section>
 
@@ -52,5 +81,18 @@
     </section>
 
 
+  </div>
+</div>
+
+<!-- Pop's diapositiva 1  -->
+<div class="pop1" (click)="pop1 = !pop1" *ngIf="pop1">
+  <div class="contenedor" (click)="noClose($event)">
+    <button (click)="msg()">pruebaA</button>
+  </div>
+</div>
+
+<div class="pop2" (click)="pop2 = !pop2" *ngIf="pop2">
+  <div class="contenedor" (click)="noClose($event)">
+    <button (click)="msg()">pruebaB</button>
   </div>
 </div>
