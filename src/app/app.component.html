@@ -1,32 +1,44 @@
 <div class="reveal">
 
-  <i class="fa-solid fa-reply fa-2x icon" (click)="atras()" *ngIf="backButton"></i>
-
   <div class="slides">
     <!-- 0 -->
-    <section data-background-image="assets/1.jpg" data-background-size="cover" data-background-repeat="no-repeat" data-background-position="center">
+    <section data-background-image="assets/1.jpg" data-background-size="cover" data-background-repeat="no-repeat"
+      data-background-position="center">
       <div class="title">
-        <div class="title-text" (click)="siguiente()" >Despacho Aduanero de Mercancías</div>
+        <div class="title-text" (click)="siguiente()">Despacho Aduanero de Mercancías</div>
       </div>
     </section>
     <!-- 1 -->
-    <section >
-        <div class="info">
-          La Ley Aduanera define al despacho aduanero de las mercancías, como “el conjunto de actos y formalidades relativos a la entrada de mercancías al territorio nacional y su salida del mismo,
-          que de acuerdo con los diferentes <a href="#/1/1">tráficos</a> y <a href="#/1/2">regímenes</a> aduaneros deben realizar en la Aduana las Autoridades Aduaneras y los consignatarios,
-          destinatarios, propietarios, poseedores o tenedores en las importaciones y los remitentes en las exportaciones, así como los agentes o agencias aduanales.
-          (Artículo 35 de la Ley Aduanera).
-        </div>
-        <div class="images">
-          <div class="imgs" ></div>
-          <div class="imgs" ></div>
-          <div class="imgs" ></div>
-        </div>
+    <section>
+      <div class="info">
+        La Ley Aduanera define al despacho aduanero de las mercancías, como “el conjunto de actos y formalidades
+        relativos a la entrada de mercancías al territorio nacional y su salida del mismo,
+        que de acuerdo con los diferentes <a href="#/1/1">tráficos</a> y <a href="#/1/2">regímenes</a> aduaneros deben
+        realizar en la <a href="#/1/1">Aduana</a> las Autoridades Aduaneras y los consignatarios,
+        destinatarios, propietarios, poseedores o tenedores en las importaciones y los remitentes en las exportaciones,
+        así como los agentes o agencias aduanales.
+        (Artículo 35 de la Ley Aduanera).
+      </div>
+     
+      <div class="images">
+        <div class=" imgs" ></div>
+        <div class=" imgs" ></div>
+        <div class=" imgs" ></div>
+      </div>
+
+      <i class="fa-solid fa-circle-arrow-left" (click)="goToSlide(0,0)"></i>
+      <i class="fa-solid fa-circle-arrow-right" (click)="goToSlide(2,0)"></i>
+
+      <section>Aduana</section>
+      <section>Traficos</section>
+      <section>Regimenez</section>
+      
+   
 
     </section>
 
     <!-- 2 -->
-    <section >
+    <section>
       Fragmentos
       <div class="fragment" data-fragment-index="0">
         1 seccion 2

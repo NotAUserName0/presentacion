@@ -1,9 +1,9 @@
-.title{
+.title {
   display: block;
   text-align: center;
 }
 
-.title-text{
+.title-text {
   background: rgba(0, 0, 0, 0.60);
   width: 100%;
   font-size: 100px;
@@ -11,31 +11,35 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
 }
 
-.tittle-img{
+.tittle-img {
   height: 600px;
   width: 100%;
 }
 
-.info{
+.info {
   font-size: 20px;
   cursor: default;
+  font-weight: 100;
 }
 
 a {
   cursor: pointer;
   color: white;
+  font-weight: bold;
+  text-decoration: underline;
 }
 
-a:hover{
+a:hover {
   background-color: white;
   color: black;
   border-radius: 5px;
+  text-decoration: none;
 }
 
-.icon{
+.icon {
   position: absolute;
   top: 50px;
   right: 50px;
@@ -43,21 +47,20 @@ a:hover{
   z-index: 10;
 }
 
-.images{
+.images {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.imgs{
-  width: 100px;
-  height: 100px;
+.imgs {
+  width: 300px;
+  height: 200px;
   border: 1px solid white;
-  margin: 20px 10px 0px 10px;
-  opacity: 0;
+  margin: 40px 10px 0px 10px;
 }
 
-.imgs:nth-child(1){
+.imgs:nth-child(1) {
   background-image: url("/assets/2.jpeg");
   background-repeat: no-repeat;
   background-position: center;
@@ -65,36 +68,44 @@ a:hover{
 
 }
 
-.imgs:nth-child(2){
-  background-image: url("/assets/2.jpeg");
+.imgs:nth-child(2) {
+  background-image: url("/assets/3.jpeg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 
 }
 
-.imgs:nth-child(3){
-  background-image: url("/assets/2.jpeg");
+.imgs:nth-child(3) {
+  background-image: url("/assets/4.webp");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 
 }
 
-.fadeIn{
-  opacity: 1 !important;
+i{
+  cursor: pointer;
+  margin: 20px 10px 0px 0px;
 }
 
 
 /*EFECTS*/
 /* Animación de bounce */
 @keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
+
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
     transform: translateY(0);
   }
+
   40% {
     transform: translateY(-30px);
   }
+
   60% {
     transform: translateY(-15px);
   }

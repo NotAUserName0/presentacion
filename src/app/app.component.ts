@@ -18,9 +18,6 @@ import Reveal from 'reveal.js'
 })
 export class AppComponent implements AfterViewInit{
   title = 'demoD';
-  backButton:boolean =false;
-  contador: number = 0;
-  intervalId: any;
 
   constructor() {
   }
@@ -32,36 +29,15 @@ export class AppComponent implements AfterViewInit{
       history:true,
       touch:true,
       transition: 'concave',
+      autoSlide: false
     })
 
     Reveal.addEventListener('slidechanged', evento=>{ //evento de cambio de slide
 
       console.log("slide changed to: "+ evento['indexh'])
-
-      if(evento['indexh']===0){
-        this.backButton = false;
-      }else{
-        this.backButton = true;
-      }
-      const slide2 = document.getElementById('slide2');
-
+      
       if(evento['indexh']===1){
-
-        this.intervalId = setInterval(() => {
-          if(this.contador === 0){
-            console.log("1")
-            this.contador++
-          }else if(this.contador === 1){
-            console.log("2")
-            this.contador++
-          }else if(this.contador === 2){
-            console.log("3")
-            this.contador++
-          }/*else{
-            console.log(this.contador)
-            this.contador++
-          }*/
-        }, 1000)
+        
       }
 
       //console.log('Evento slidechanged h:', event['indexh']);
@@ -69,22 +45,13 @@ export class AppComponent implements AfterViewInit{
         //console.log(event.fragment.dataset.fragmentIndex)
         console.log("Presentacion: "+evento['indexh']+", Fragmento: "+event.fragment.dataset.fragmentIndex)
 
-        /*if(evento['indexh'] === 2 && event.fragment.dataset.fragmentIndex === "1"){
-          alert("Llegaste")
-          console.log("llegaste")
-        }else{
-          console.log("no es")
-        }*/
+        
       });
 
-      /*Reveal.addEventListener('fragmenthidden',event=>{ //al salir
-        if(evento['indexh'] === 2 && event.fragment.dataset.fragmentIndex === "1"){
-          alert("Llegaste")
-          console.log("llegaste")
-        }else{
-          console.log("no es")
-        }
-      })*/
+    })
+
+    Reveal.addEventListener('slidehidden',event=>{
+      
     })
 
 
@@ -96,6 +63,10 @@ export class AppComponent implements AfterViewInit{
 
   atras(){
     Reveal.prev()
+  }
+
+  goToSlide(indexh, indexv) {
+    Reveal.slide(indexh, indexv);
   }
 
 
