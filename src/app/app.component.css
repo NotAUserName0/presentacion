@@ -193,9 +193,11 @@ ol {
   text-align: justify;
 }
 
-.dia3 > div{
-  font-weight: bold;
-  text-align: center;
+.center > strong {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px auto 10px auto;
 }
 
 .img-text{
@@ -229,60 +231,64 @@ img:hover{
 
 
 @media only screen and (min-width: 600px) and (max-width: 1440px) {
-  .contenedor1 {
-    width: 35%;
-    height: 60%;
-    border-radius: 15px;
-  }
 
-  .contenedor1>div {
-    margin: 0px 0px 10px 0px;
-    font-size: 9px;
-    font-weight: 500;
-  }
-
-  .contenedor1>ol {
-
-    font-size: 7px;
-  }
-
-  ol {
-    margin: 0px;
-  }
-
-  .contenedor1>i {
-    top: -12px;
-    right: 0px;
+  /* Contenedor A */
+  .contenedorA{
+    width: 40%;
+    height: 80%;
   }
 
   .listaAduana {
-    padding: 2px;
-  }
-
-  .sublistaAduana {
-    padding: 0px 0px 0px 10px;
-  }
-
-  .res{
-    font-size: 15px;
-  }
-
-  .reCont1{
-    width: 25%;
-    height: 30%;
-    font-size: 10px;
-    padding: 15px;
-    text-align: center;
-  }
-
-  .reCont1 > div {
+    margin: 0px 15% 0px 15%;
+    padding: 0px;
     font-size: 8px;
-    font-weight: 400;
+  }
+  
+  .sublistaAduana {
+    font-size: 5px;
+    padding-left: 10px;
+    font-size: 6px;
   }
 
-  .reCont1 > div:nth-child(2) {
+  .contenedorA>div {
     font-size: 10px;
+  }
+
+  ol{
+    margin-left: 0px;
+  }
+
+  .contenedorA>i {
+    top: -10px;
+    right: 0px;
+    font-size: 20px;
+  }
+
+  /* Contenedor B */
+
+  .contenedorB{
+    width: 35%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .pop-title{
+    font-size: 15px;
     font-weight: 500;
+  }
+  
+  .pop-body{
+    margin: 5px 20px 20px 20px;
+    font-size: 10px;
+    text-align: justify;
+  }
+
+  .contenedorB>i {
+    top: -10px;
+    right: 0px;
+    font-size: 20px;
   }
 }
 
