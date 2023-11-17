@@ -97,7 +97,14 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular-devkit/build-angular:deploy",
+          "options": {
+            "baseHref": "/presentacion/"
+          }
         }
+
       }
     }
   },
