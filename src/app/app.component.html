@@ -22,9 +22,9 @@
         </div>
 
         <div class="images">
-          <div class=" imgs" ></div>
-          <div class=" imgs" ></div>
-          <div class=" imgs" ></div>
+          <img src="assets/2.jpeg" alt="" class="imgs">
+          <img src="assets/3.jpeg" alt="" class="imgs">
+          <img src="assets/4.webp" alt="" class="imgs">
         </div>
 
         <i class="fa-solid fa-play" (click)="control(0)"></i>
@@ -52,7 +52,7 @@
        <div> 4. ¿Dónde se deben realizar?</div>
         <br>
         <div class="img-text">
-          <img src="assets/4.jpeg" alt="">
+          <img src="assets/5.jpeg" alt="">
           <div>
             La entrada o la salida de mercancías del territorio nacional, deberá efectuarse por lugar autorizado, en día y hora hábil. <br>
             El Servicio de Administración Tributaria podrá autorizar la entrada al territorio nacional o la salida del mismo por lugar distinto al autorizado, de mercancías que por su naturaleza o volumen no puedan despacharse conforme a lo establecido en el párrafo anterior, o bien, por eficiencia y facilitación en el despacho de las mercancías. (Artículo 10 Ley Aduanera)
@@ -70,8 +70,8 @@
 
 <!-- Pop's diapositiva 1  -->
 <div class="pop1" (click)="pop1 = !pop1" *ngIf="pop1" [@fadeInOut]>
-  <div class="contenedor1" (click)="noClose($event)">
-    <i class="fa-solid fa-xmark fa-2x res" (click)="pop1 = !pop1"></i>
+  <div class="contenedorA" (click)="noClose($event)">
+    <i class="fa-solid fa-xmark" (click)="pop1 = !pop1"></i>
     <div>Regímenes aduanero, Artículo 90 Ley Aduanera</div>
     <ol class="listaAduana">
       <li>Definitivo</li>
@@ -97,18 +97,18 @@
 </div>
 
 <div class="pop2" (click)="pop2 = !pop2" *ngIf="pop2" [@fadeInOut]>
-  <div class="contenedor1 reCont1" (click)="noClose($event)">
-     <i class="fa-solid fa-xmark fa-2x res" (click)="pop2 = !pop2"></i>
+  <div class="contenedorB" (click)="noClose($event)">
+     <i class="fa-solid fa-xmark" (click)="pop2 = !pop2"></i>
     <div class="pop-title">Tráficos</div>
-    <div>Marítimo, Terrestre, Ferroviario, Aéreo, Fluvial, otros medios de conducción: gasoductos, cables eléctricos etc., y Vía postal, <strong>Artículo 11 Ley Aduanera</strong></div>
+    <div class="pop-body">Marítimo, Terrestre, Ferroviario, Aéreo, Fluvial, otros medios de conducción: gasoductos, cables eléctricos etc., y Vía postal, <strong>Artículo 11 Ley Aduanera</strong></div>
   </div>
 </div>
 
 <div class="pop3" (click)="pop3 = !pop3" *ngIf="pop3" [@fadeInOut]>
-  <div class="contenedor1 reCont1">
+  <div class="contenedorB">
     <i class="fa-solid fa-xmark fa-2x res" (click)="pop3 = !pop3"></i>
     <div class="pop-title">Aduana</div>
-    <div>
+    <div class="pop-body">
       Lugar autorizado para la entrada y salida de mercancías al país, en día y hora hábil.
       (nombre y sede de las 50 Aduanas se señalan en el Artículo 37 Reglamento Interior de la Agencia Nacional de Aduanas de México: 21 fronterizas, 17 marítimas y 12 interiores)
     </div>
@@ -118,9 +118,9 @@
 <!--Pop's diapositiva 2-->
 
 <div class="pop4" (click)="pop4 = !pop4" *ngIf="pop4" [@fadeInOut]>
-  <div class="contenedor1 reCont1">
+  <div class="contenedorB">
     <i class="fa-solid fa-xmark fa-2x res" (click)="pop4 = !pop4"></i>
-    <div>
+    <div class="pop-body">
       Se consideran mercancías, los productos, artículos, efectos y cualesquier otros bienes, aun cuando las leyes los consideren inalienables o irreductibles a propiedad particular, <strong>Artículo 2 fracción III, Ley Aduanera</strong>
     </div>
   </div>

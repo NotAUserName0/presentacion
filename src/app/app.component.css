@@ -103,8 +103,8 @@ i {
   justify-content: center;
 }
 
-.contenedor1 {
-  font-family: 'Roboto', sans-serif;
+/* POP 1 (pop large)*/
+.contenedorA{
   width: 35%;
   height: 45%;
   background-color: white;
@@ -120,47 +120,68 @@ i {
 
 .listaAduana {
   list-style-type: upper-alpha;
+  margin: 20px 13% 0px 13%;
+  font-size: 20px;
 }
 
 .sublistaAduana {
   list-style-type: upper-roman;
+  font-size: 18px;
 }
 
-.contenedor1>div {
+.contenedorA>i {
+  position: absolute;
+  top: 0px;
+  right: 10px;
+  font-size: 40px;
+}
+
+.contenedorA>div {
   margin: 0px 0px 10px 0px;
   font-size: 30px;
   font-weight: 500;
-}
-
-.contenedor1>ol {
-  padding: 0px 15% 0px 15%;
-  font-size: 25px;
 }
 
 ol {
   margin: 10px 0px 10px 0px;
 }
 
-.contenedor1>i {
+/*----------------------   */
+
+/* POP 2 (pop short) */
+.contenedorB{
+  width: 30%;
+  height: 25%;
+  background-color: white;
+  z-index: 12;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 15px;
+  position: relative;
+  cursor: default;
+  padding: 10px;
+}
+
+.contenedorB>i {
   position: absolute;
   top: 0px;
   right: 10px;
-}
-
-.reCont1:not(i){
-  text-align: justify;
-  font-weight: 100;
-  font-weight: 20px;
+  font-size: 40px;
 }
 
 .pop-title{
-  font-size: 80px !important;
-  font-weight: bold !important;
+  font-size: 40px;
+  font-weight: 500;
 }
 
-.reCont1 > div {
-  padding: 20px 10% 0px 10%;
+.pop-body{
+  margin: 20px 60px 20px 60px;
+  font-size: 30px;
 }
+
+/*----------------------   */
 
 .dia2 > .fragment, .init{
   text-align: left;
@@ -202,6 +223,10 @@ img:hover{
   transform: scale(1.1);
 
 }
+
+
+
+
 
 @media only screen and (min-width: 600px) and (max-width: 1440px) {
   .contenedor1 {
