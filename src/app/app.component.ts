@@ -28,7 +28,7 @@ export class AppComponent implements AfterViewInit{
   private audios: HTMLAudioElement[] = [];
   //pop dia1
   pop1:boolean = false
-  pop2:boolean = true
+  pop2:boolean = false
   pop3:boolean = false
   //pop dia 2
   pop4:boolean = false
@@ -69,6 +69,7 @@ export class AppComponent implements AfterViewInit{
       //animacion de botones
       document.getElementById("anim").classList.add("rebote")
       document.getElementById("anim1").classList.add("rebote")
+      document.getElementById("anim2").classList.add("rebote")
 
       //Diapositiva 1 - audio 0
       if(evento['indexh']===1 ){
