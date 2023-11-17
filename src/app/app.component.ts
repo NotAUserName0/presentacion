@@ -2,7 +2,6 @@ import {AfterViewInit, Component} from '@angular/core';
 import { trigger, state, style, transition, animate } from '@angular/animations';
 
 import Reveal from 'reveal.js'
-import Swal from "sweetalert2";
 
 @Component({
   selector: 'app-root',
@@ -49,17 +48,23 @@ export class AppComponent implements AfterViewInit{
       touch:true,
       transition: 'concave',
       autoSlide: false,
+      sync: true
     })
 
     Reveal.addEventListener('slidechanged', evento=>{ //evento de cambio de slide
 
       console.log("slide changed to: "+ evento['indexh'] + "vertical: " + evento['indexv'])
+      Reveal.sync()
 
       //initial - reinicia audios
-      for (let i = 1; i <= 4; i++){
-        this.audios[i].pause()
-        this.audios[i].currentTime = 0
-      }
+      this.audios[0].pause()
+      this.audios[0].currentTime = 0
+      this.audios[1].pause()
+      this.audios[1].currentTime = 0
+      this.audios[2].pause()
+      this.audios[2].currentTime = 0
+      this.audios[3].pause()
+      this.audios[3].currentTime = 0
 
       //animacion de botones
       document.getElementById("anim").classList.add("rebote")
@@ -103,7 +108,7 @@ export class AppComponent implements AfterViewInit{
         }
       });
 
-      
+
 
 
     })
@@ -115,9 +120,9 @@ export class AppComponent implements AfterViewInit{
     Reveal.slide(indexh, indexv);
   }
 
-  goToMainSlide(indexh){
-    Reveal.slide(indexh)
-    
+  goToMainSlide(indexh, indexv, fragment){
+    Reveal.slide(indexh, indexv,fragment);
+
   }
 
   siguiente(){
@@ -128,12 +133,12 @@ export class AppComponent implements AfterViewInit{
     Reveal.prev()
   }
 
-  pause(){
-
-  }
-
-  reanuda(){
-
+  control(id){
+    if(!this.audios[id].paused){
+      this.audios[id].pause()
+    }else{
+      this.audios[id].play()
+    }
   }
 
   noClose(event: MouseEvent){ //General

@@ -147,6 +147,21 @@ ol {
   right: 10px;
 }
 
+.reCont1:not(i){
+  text-align: justify;
+  font-weight: 100;
+  font-weight: 20px;
+}
+
+.pop-title{
+  font-size: 80px !important;
+  font-weight: bold !important;
+}
+
+.reCont1 > div {
+  padding: 20px 10% 0px 10%;
+}
+
 .dia2 > .fragment, .init{
   text-align: left;
   font-size: 40px;
@@ -160,6 +175,32 @@ ol {
 .dia3 > div{
   font-weight: bold;
   text-align: center;
+}
+
+.img-text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-text > img{
+  width: 30%;
+}
+
+.img-text > div{
+  text-align: justify;
+  font-weight: 200;
+  font-size: 25px;
+  padding: 0px 20px 0px 20px;
+}
+
+img{
+  transition: transform 0.3s ease-in-out;
+}
+
+img:hover{
+  transform: scale(1.1);
+
 }
 
 @media only screen and (min-width: 600px) and (max-width: 1440px) {
@@ -176,7 +217,7 @@ ol {
   }
 
   .contenedor1>ol {
-    
+
     font-size: 7px;
   }
 
@@ -192,7 +233,7 @@ ol {
   .listaAduana {
     padding: 2px;
   }
-  
+
   .sublistaAduana {
     padding: 0px 0px 0px 10px;
   }
@@ -218,10 +259,7 @@ ol {
     font-size: 10px;
     font-weight: 500;
   }
-
-
 }
-
 
 
 /*EFECTS*/
