@@ -28,7 +28,7 @@ export class AppComponent implements AfterViewInit{
   private audios: HTMLAudioElement[] = [];
   //pop dia1
   pop1:boolean = false
-  pop2:boolean = false
+  pop2:boolean = true
   pop3:boolean = false
   //pop dia 2
   pop4:boolean = false

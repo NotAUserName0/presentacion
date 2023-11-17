@@ -234,24 +234,24 @@ img:hover{
 
   /* Contenedor A */
   .contenedorA{
-    width: 40%;
-    height: 80%;
+    width: 45%;
+    height: 65%;
   }
 
   .listaAduana {
-    margin: 0px 15% 0px 15%;
+    margin: 12px 15% 0px 15%;
     padding: 0px;
-    font-size: 8px;
+    font-size: 18px;
   }
   
   .sublistaAduana {
     font-size: 5px;
     padding-left: 10px;
-    font-size: 6px;
+    font-size: 14px;
   }
 
   .contenedorA>div {
-    font-size: 10px;
+    font-size: 25px;
   }
 
   ol{
@@ -267,21 +267,21 @@ img:hover{
   /* Contenedor B */
 
   .contenedorB{
-    width: 35%;
-    height: 40%;
+    width: 25%;
+    height: 35%;
     display: flex;
     align-items: center;
     justify-content: center;
   }
 
   .pop-title{
-    font-size: 15px;
+    font-size: 35px;
     font-weight: 500;
   }
   
   .pop-body{
-    margin: 5px 20px 20px 20px;
-    font-size: 10px;
+    margin: 15px 20px 20px 20px;
+    font-size: 15px;
     text-align: justify;
   }
 
