@@ -253,7 +253,7 @@ img:hover{
 }
 
 .dontShow{
-  display: none;
+  display: none !important;
 }
 
 
@@ -318,6 +318,32 @@ img:hover{
     right: 0px;
     font-size: 20px;
   }
+}
+
+@media only screen and (min-width: 1441px){
+  
+  .sublistaAduana {
+    font-size: 15px;
+  }
+
+  .contenedorA>i {
+    font-size: 30px;
+  }
+
+  .contenedorA>div {
+    font-size: 25px;
+  }
+
+  .pop-title{
+    font-size: 30px;
+    font-weight: 500;
+  }
+  
+  .pop-body{
+    margin: 20px 60px 20px 60px;
+    font-size: 20px;
+  }
+  
 }
 
 
