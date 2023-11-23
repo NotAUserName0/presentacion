@@ -34,8 +34,8 @@ export class AppComponent implements AfterViewInit{
   pop4:boolean = false
 
   constructor() {
-    for (let i = 1; i <= 4; i++) { //agrego audios
-      const audio = new Audio(`assets/${i}.mp3`);
+    for (let i = 1; i <= 5; i++) { //agrego audios
+      const audio = new Audio(`assets/${i}.m4a`);
       this.audios.push(audio);
     }
   }
@@ -57,19 +57,27 @@ export class AppComponent implements AfterViewInit{
       Reveal.sync()
 
       //initial - reinicia audios
-      this.audios[0].pause()
+      /*this.audios[0].pause()
       this.audios[0].currentTime = 0
       this.audios[1].pause()
       this.audios[1].currentTime = 0
       this.audios[2].pause()
       this.audios[2].currentTime = 0
       this.audios[3].pause()
-      this.audios[3].currentTime = 0
+      this.audios[3].currentTime = 0*/
+
+      for(let i = 0; i < 5 ; i++){
+        if(this.audios[i].played){
+          this.audios[i].currentTime = 0
+          this.audios[i].pause()
+        }
+      }
 
       //animacion de botones
-      document.getElementById("anim").classList.add("rebote")
-      document.getElementById("anim1").classList.add("rebote")
-      document.getElementById("anim2").classList.add("rebote")
+      for (let i = 0; i < 8; i++) {
+        document.getElementById("anim" + i)?.classList.add("rebote");
+    }
+    
 
       //Diapositiva 1 - audio 0
       if(evento['indexh']===1 ){
@@ -82,13 +90,20 @@ export class AppComponent implements AfterViewInit{
         this.audios[1].play()
       }
 
+      //Diapositiva 3 - audio 4
+      if(evento['indexh']===3 ){
+        this.audios[4].volume = 0.2
+        this.audios[4].play()
+      }
+
 
       //console.log('Evento slidechanged h:', event['indexh']);
       Reveal.addEventListener('fragmentshown',event=>{ //al entrar
         //console.log(event.fragment.dataset.fragmentIndex)
         console.log("Presentacion: "+evento['indexh']+", Fragmento: "+event.fragment.dataset.fragmentIndex)
 
-        if(evento['indexh']===2){ //fragmentos de 2
+        if(evento['indexh']===2){ //fragmentos de diapositiva 2
+          //audios 2, 3
           //initial
           this.audios[1].pause()
           this.audios[1].currentTime = 0

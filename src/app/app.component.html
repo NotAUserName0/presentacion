@@ -10,26 +10,27 @@
     </section>
 
     <!-- 1 -->
-    <section >
-        <div class="info">
-          La Ley Aduanera define al despacho aduanero de las mercancías, como “el conjunto de actos y formalidades
-          relativos a la entrada de mercancías al territorio nacional y su salida del mismo,
-          que de acuerdo con los diferentes <a (click)="pop2 = !pop2">tráficos</a> y <a (click)="pop1 = !pop1">regímenes</a> aduaneros deben
-          realizar en la <a (click)="pop3 = !pop3">Aduana</a> las Autoridades Aduaneras y los consignatarios,
-          destinatarios, propietarios, poseedores o tenedores en las importaciones y los remitentes en las exportaciones,
-          así como los agentes o agencias aduanales.
-          (Artículo 35 de la Ley Aduanera).
-        </div>
+    <section>
+      <div class="info">
+        La Ley Aduanera define al despacho aduanero de las mercancías, como “el conjunto de actos y formalidades
+        relativos a la entrada de mercancías al territorio nacional y su salida del mismo,
+        que de acuerdo con los diferentes <a (click)="pop2 = !pop2">tráficos</a> y <a
+          (click)="pop1 = !pop1">regímenes</a> aduaneros deben
+        realizar en la <a (click)="pop3 = !pop3">Aduana</a> las Autoridades Aduaneras y los consignatarios,
+        destinatarios, propietarios, poseedores o tenedores en las importaciones y los remitentes en las exportaciones,
+        así como los agentes o agencias aduanales.
+        (Artículo 35 de la Ley Aduanera).
+      </div>
 
-        <div class="images">
-          <img src="assets/2.jpeg" alt="" class="imgs">
-          <img src="assets/3.jpeg" alt="" class="imgs">
-          <img src="assets/4.webp" alt="" class="imgs">
-        </div>
+      <div class="images">
+        <img src="assets/2.jpeg" alt="" class="imgs">
+        <img src="assets/3.jpeg" alt="" class="imgs">
+        <img src="assets/4.webp" alt="" class="imgs">
+      </div>
 
-        <i class="fa-solid fa-play" (click)="control(0)"></i>
-        <i class="fa-solid fa-circle-arrow-left" (click)="goToSlide(0,0)"></i>
-        <i class="fa-solid fa-circle-arrow-right" id="anim" (click)="goToSlide(2,0)"></i>
+      <i class="fa-solid fa-play" (click)="control(0)"></i>
+      <i class="fa-solid fa-circle-arrow-left" (click)="goToSlide(0,0)"></i>
+      <i class="fa-solid fa-circle-arrow-right" id="anim0" (click)="goToSlide(2,0)"></i>
 
     </section>
 
@@ -37,33 +38,167 @@
     <section class="dia2" id="2">
       <div class="init">1. Es un conjunto de actos y formalidades.</div>
       <div class="fragment" data-fragment-index="0">
-        2. Relativos a la entrada (importación) y salida (exportación) de <a (click)="pop4 = !pop4">mercancías</a> del territorio nacional.
+        2. Relativos a la entrada (importación) y salida (exportación) de <a (click)="pop4 = !pop4">mercancías</a> del
+        territorio nacional.
       </div>
       <div class="fragment" data-fragment-index="1">
-        3. De acuerdo con los diferentes tráficos (medio de transporte) y regímenes aduaneros (destino de las mercancías) establecidos en la Ley Aduanera.
+        3. De acuerdo con los diferentes tráficos (medio de transporte) y regímenes aduaneros (destino de las
+        mercancías) establecidos en la Ley Aduanera.
       </div>
       <i class="fa-solid fa-circle-arrow-left" (click)="goToSlide(1,0)"></i>
       <i class="fa-solid fa-circle-arrow-right" id="anim1" (click)="siguiente()"></i>
-      
+
     </section>
 
     <!-- 3 -->
     <section>
-      <div class="dia3">
+      <div class="diapositiva-text">
         <br>
         <div class="img-text">
           <img src="assets/5.jpeg" alt="">
           <div class="center">
             <strong> 4. ¿Dónde se deben realizar?</strong> <br>
-            La entrada o la salida de mercancías del territorio nacional, deberá efectuarse por lugar autorizado, en día y hora hábil. <br>
-            El Servicio de Administración Tributaria podrá autorizar la entrada al territorio nacional o la salida del mismo por lugar distinto al autorizado, de mercancías que por su naturaleza o volumen no puedan despacharse conforme a lo establecido en el párrafo anterior, o bien, por eficiencia y facilitación en el despacho de las mercancías. (Artículo 10 Ley Aduanera)
-            </div>
+            La entrada o la salida de mercancías del territorio nacional, deberá efectuarse por lugar autorizado, en día
+            y hora hábil. <br>
+            El Servicio de Administración Tributaria podrá autorizar la entrada al territorio nacional o la salida del
+            mismo por lugar distinto al autorizado, de mercancías que por su naturaleza o volumen no puedan despacharse
+            conforme a lo establecido en el párrafo anterior, o bien, por eficiencia y facilitación en el despacho de
+            las mercancías. <div class="destacar">(Artículo 10 Ley Aduanera)</div>
+          </div>
         </div>
       </div>
       <i class="fa-solid fa-play" (click)="control(4)"></i>
-        <i class="fa-solid fa-circle-arrow-left" (click)="goToMainSlide(2,0,-1)"></i>
-        <i class="fa-solid fa-circle-arrow-right" id="anim2" (click)="goToSlide(4,0)"></i>
+      <i class="fa-solid fa-circle-arrow-left" (click)="goToMainSlide(2,0,-1)"></i>
+      <i class="fa-solid fa-circle-arrow-right" id="anim2" (click)="goToSlide(4,0)"></i>
     </section>
+
+    <!-- 4 -->
+    <section>
+      <div class="diapositiva-text">
+        <br>
+        <div class="img-text">
+          <div class="center">
+            <strong>5. ¿Quiénes lo deben realizar?</strong>
+            Las autoridades aduaneras y quienes introducen mercancías al territorio nacional o las extraen del mismo, ya
+            sean sus propietarios, poseedores, tenedores, consignatarios, destinatarios, remitentes, apoderados, agentes
+            aduanales, agencias aduanales o cualesquiera personas que tengan intervención en la introducción,
+            extracción, custodia, almacenaje, manejo y tenencia de las mercancías. <div class="destacar">(Artículo 2 Ley
+              Aduanera)</div>
+          </div>
+          <img src="assets/6.webp" alt="">
+        </div>
+      </div>
+      <i class="fa-solid fa-play" (click)="control(5)"></i>
+      <i class="fa-solid fa-circle-arrow-left" (click)="goToSlide(3,0)"></i>
+      <i class="fa-solid fa-circle-arrow-right" id="anim3" (click)="goToSlide(5,0)"></i>
+    </section>
+
+    <!-- 5 -->
+    <section>
+      <div class="diapositiva-text">
+        <br>
+        <div class="img-text">
+          <img src="assets/7.jpeg" alt="">
+          <div class="center">
+            <strong> 6. ¿Cómo se deben realizar? </strong>
+            Empleando el Sistema Electrónico Aduanero (SEA) <span class="destacar">(Artículo 36 Ley Aduanera)</span>
+            Este sistema es conocido como “Sistema Automatizado Aduanero Integral” (SAAI) y se desarrolla a través de la
+            Ventanilla Única de Comercio Exterior (VUCE) que es una herramienta electrónica que oficialmente se denomina
+            “Ventanilla Digital” misma que permite él envió de información vía web en un portal, una sola vez ante única
+            entidad administrativa, para cumplir con las regulaciones y restricciones no arancelarias requeridas para el
+            despacho aduanero.
+            El “e-document” es el número de acuse emitido por la Ventanilla Digital que corresponde a un documento
+            digital. Es un acuse de recibo emitido por la VUCE cuando se transmite un documento vía electrónica.
+          </div>
+        </div>
+      </div>
+      <i class="fa-solid fa-play" (click)="control(6)"></i>
+      <i class="fa-solid fa-circle-arrow-left" (click)="goToSlide(4,0)"></i>
+      <i class="fa-solid fa-circle-arrow-right" id="anim4" (click)="goToSlide(6,0)"></i>
+    </section>
+
+    <!-- 6 -->
+    <section>
+      <div class="diapositiva-text">
+        <span class="destacar">DODA:</span> Es el Documento de Operación para Despacho Aduanero, el cual se genera con
+        la información de los pedimentos validados y pagados o del aviso consolidado, según corresponda, y sirve para
+        activar el Mecanismo de Selección Automatizado (MSA), con el fin de realizar el despacho aduanero de las
+        mercancías, integrando uno o varios pedimentos dentro de un solo documento, sustituyendo la “Relación de
+        documentos”, impresión de pedimento, forma simplificada de pedimento, impresión del aviso consolidado, impresión
+        del aviso electrónico de importación y de exportación, Pedimento Parte II, de conformidad con la regla 3.1.33.
+        de las Reglas Generales de Comercio Exterior (RGCE).
+      </div>
+      <i class="fa-solid fa-play" (click)="control(7)"></i>
+      <i class="fa-solid fa-circle-arrow-left" (click)="goToSlide(5,0)"></i>
+      <i class="fa-solid fa-circle-arrow-right" id="anim5" (click)="goToSlide(7,0)"></i>
+    </section>
+
+    <!-- 7 -->
+    <section>
+      <div class="diapositiva-text">
+        <span class="destacar">PITA:</span> El Proyecto de Integración Tecnológica Aduanera es una iniciativa integral
+        que plantea automatizar, facilitar y agilizar los procesos de entrada y salida de mercancías en las aduanas del
+        país.
+        El SAT establecerá mediante reglas, lo procedente en los casos de contingencias en el SEA derivadas de caso
+        fortuito o fuerza mayor. (Programa de contingencia, actualizado a la versión del 18 de mayo de 2017 dada a
+        conocer en la HI # 8 de la Circular G-161/17)
+      </div>
+      <i class="fa-solid fa-play" (click)="control(8)"></i>
+      <i class="fa-solid fa-circle-arrow-left" (click)="goToSlide(6,0)"></i>
+      <i class="fa-solid fa-circle-arrow-right" id="anim6" (click)="goToSlide(8,0)"></i>
+    </section>
+
+    <!-- 8 -->
+    <section>
+      <div class="diapositiva-text">
+        <div class="center">
+          <strong class="mainTitles">"Etapas del despacho aduanero de mercancías"</strong>
+        </div>
+      </div>
+      <div class="images">
+        <img src="" alt="">
+        <img src="assets/8.webp" alt="" class="imgs">
+        <img src="" alt="">
+      </div>
+      <i class="fa-solid fa-play" (click)="control(9)"></i>
+      <i class="fa-solid fa-circle-arrow-left" (click)="goToSlide(7,0)"></i>
+      <i class="fa-solid fa-circle-arrow-right" id="anim7" (click)="goToSlide(9,0)"></i>
+    </section>
+
+    <!-- 9 -->
+    <section>
+      <div class="diapositiva-text">
+        <ol>
+          <li>Inscripción en los padrones respectivos</li>
+          <li>Selección y contratación del agente o agencia aduanal</li>
+          <li>Otorgamiento del encargo conferido al agente o agencia aduanal</li>
+          <li>Clasificación arancelaria y determinación de las contribuciones</li>
+          <li> Preparación de la documentación que se debe anexar al pedimento</li>
+          <li> Elaboración del pedimento en formato oficial</li>
+          <li> Prevalidación y validación del pedimento en el SAAI</li>
+        </ol>
+      </div>
+      <i class="fa-solid fa-play" (click)="control(10)"></i>
+      <i class="fa-solid fa-circle-arrow-left" (click)="goToSlide(8,0)"></i>
+      <i class="fa-solid fa-circle-arrow-right" id="anim5" (click)="goToSlide(10,0)"></i>
+    </section>
+
+    <!-- 10 -->
+    <section>
+      <div class="diapositiva-text">
+        <ol start="8">
+          <li> Pago de las contribuciones, y aprovechamientos en los bancos autorizados</li>
+         <li> Arribo de la mercancía a territorio nacional por lugar autorizado</li>
+         <li> Presentar la mercancía ante el mecanismo de selección automatizado</li>
+         <li> Si corresponde reconocimiento aduanero se debe practicar la verificación</li>
+         <li> En caso de incidencia, proceder a la determinación de contribuciones y multas, al embargo o retención</li>
+         <li> De no existir irregularidades se liberará la mercancía de inmediato</li>
+          <li>Conclusión del despacho aduanero.</li>
+        </ol>
+      </div>
+    </section>
+
+
 
 
   </div>
@@ -82,8 +217,10 @@
       </ol>
       <li>Temporal</li>
       <ol class="sublistaAduana">
-        <li>De importación (Para retornar al extranjero en el mismo estado y Para elaboración, transformación o reparación en programas de maquila o de exportación). </li>
-        <li>De exportación (Para retornar al país en el mismo estado y Para elaboración, transformación o reparación). </li>
+        <li>De importación (Para retornar al extranjero en el mismo estado y Para elaboración, transformación o
+          reparación en programas de maquila o de exportación). </li>
+        <li>De exportación (Para retornar al país en el mismo estado y Para elaboración, transformación o reparación).
+        </li>
       </ol>
       <li>Depósito Fiscal </li>
       <li>Tránsito</li>
@@ -99,9 +236,10 @@
 
 <div class="pop2" (click)="pop2 = !pop2" *ngIf="pop2" [@fadeInOut]>
   <div class="contenedorB" (click)="noClose($event)">
-     <i class="fa-solid fa-xmark" (click)="pop2 = !pop2"></i>
+    <i class="fa-solid fa-xmark" (click)="pop2 = !pop2"></i>
     <div class="pop-title">Tráficos</div>
-    <div class="pop-body">Marítimo, Terrestre, Ferroviario, Aéreo, Fluvial, otros medios de conducción: gasoductos, cables eléctricos etc., y Vía postal, <strong>Artículo 11 Ley Aduanera</strong></div>
+    <div class="pop-body">Marítimo, Terrestre, Ferroviario, Aéreo, Fluvial, otros medios de conducción: gasoductos,
+      cables eléctricos etc., y Vía postal, <strong>Artículo 11 Ley Aduanera</strong></div>
   </div>
 </div>
 
@@ -111,7 +249,8 @@
     <div class="pop-title">Aduana</div>
     <div class="pop-body">
       Lugar autorizado para la entrada y salida de mercancías al país, en día y hora hábil.
-      (nombre y sede de las 50 Aduanas se señalan en el Artículo 37 Reglamento Interior de la Agencia Nacional de Aduanas de México: 21 fronterizas, 17 marítimas y 12 interiores)
+      (nombre y sede de las 50 Aduanas se señalan en el Artículo 37 Reglamento Interior de la Agencia Nacional de
+      Aduanas de México: 21 fronterizas, 17 marítimas y 12 interiores)
     </div>
   </div>
 </div>
@@ -122,7 +261,9 @@
   <div class="contenedorB">
     <i class="fa-solid fa-xmark fa-2x res" (click)="pop4 = !pop4"></i>
     <div class="pop-body">
-      Se consideran mercancías, los productos, artículos, efectos y cualesquier otros bienes, aun cuando las leyes los consideren inalienables o irreductibles a propiedad particular, <strong>Artículo 2 fracción III, Ley Aduanera</strong>
+      Se consideran mercancías, los productos, artículos, efectos y cualesquier otros bienes, aun cuando las leyes los
+      consideren inalienables o irreductibles a propiedad particular, <strong>Artículo 2 fracción III, Ley
+        Aduanera</strong>
     </div>
   </div>
 </div>

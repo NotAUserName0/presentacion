@@ -188,15 +188,18 @@ ol {
   font-size: 40px;
 }
 
-.dia3{
+.diapositiva-text{
   font-size: 30px;
   text-align: justify;
+  cursor: default;
+  font-weight: 100;
 }
 
 .center > strong {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 35px;
   margin: 0px auto 10px auto;
 }
 
@@ -212,7 +215,7 @@ ol {
 
 .img-text > div{
   text-align: justify;
-  font-weight: 200;
+  font-weight: 100;
   font-size: 25px;
   padding: 0px 20px 0px 20px;
 }
@@ -226,7 +229,14 @@ img:hover{
 
 }
 
+.destacar{
+  font-weight: bold;
+}
 
+.mainTitles{
+  font-size: 60px !important;
+  text-align: center !important;
+}
 
 
 
