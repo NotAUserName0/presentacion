@@ -238,6 +238,24 @@ img:hover{
   text-align: center !important;
 }
 
+.diapositiva-text #opc > li:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#home{
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  font-size: 30px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.dontShow{
+  display: none;
+}
+
 
 
 @media only screen and (min-width: 600px) and (max-width: 1440px) {

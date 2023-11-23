@@ -74,7 +74,7 @@ export class AppComponent implements AfterViewInit{
       }
 
       //animacion de botones
-      for (let i = 0; i < 8; i++) {
+      for (let i = 0; i < 10; i++) {
         document.getElementById("anim" + i)?.classList.add("rebote");
     }
     

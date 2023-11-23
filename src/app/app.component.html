@@ -1,5 +1,5 @@
 <div class="reveal">
-
+  <i class="fa-solid fa-house" id="home" (click)="goToSlide(0,0)"></i>
   <div class="slides">
     <!-- 0 -->
     <section data-background-image="assets/1.jpg" data-background-size="cover" data-background-repeat="no-repeat"
@@ -168,7 +168,7 @@
     <!-- 9 -->
     <section>
       <div class="diapositiva-text">
-        <ol>
+        <ol id="opc">
           <li>Inscripción en los padrones respectivos</li>
           <li>Selección y contratación del agente o agencia aduanal</li>
           <li>Otorgamiento del encargo conferido al agente o agencia aduanal</li>
@@ -180,13 +180,13 @@
       </div>
       <i class="fa-solid fa-play" (click)="control(10)"></i>
       <i class="fa-solid fa-circle-arrow-left" (click)="goToSlide(8,0)"></i>
-      <i class="fa-solid fa-circle-arrow-right" id="anim5" (click)="goToSlide(10,0)"></i>
+      <i class="fa-solid fa-circle-arrow-right" id="anim8" (click)="goToSlide(10,0)"></i>
     </section>
 
     <!-- 10 -->
     <section>
       <div class="diapositiva-text">
-        <ol start="8">
+        <ol start="8" id="opc">
           <li> Pago de las contribuciones, y aprovechamientos en los bancos autorizados</li>
          <li> Arribo de la mercancía a territorio nacional por lugar autorizado</li>
          <li> Presentar la mercancía ante el mecanismo de selección automatizado</li>
@@ -196,6 +196,8 @@
           <li>Conclusión del despacho aduanero.</li>
         </ol>
       </div>
+      <i class="fa-solid fa-play" (click)="control(11)"></i>
+      <i class="fa-solid fa-circle-arrow-left" id="anim9" (click)="goToSlide(9,0)"></i>
     </section>
 
 
