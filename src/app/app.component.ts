@@ -40,7 +40,7 @@ export class AppComponent implements AfterViewInit {
   pop8: boolean = false
 
   constructor() {
-    for (let i = 1; i <= 21; i++) { //agrego audios
+    for (let i = 1; i <= 41; i++) { //agrego audios
       const audio = new Audio(`assets/${i}.m4a`);
       this.audios.push(audio);
     }
@@ -65,7 +65,7 @@ export class AppComponent implements AfterViewInit {
       document.getElementById("home")?.classList.remove("dontShow")
 
       //initial - reinicia audios
-      for (let i = 0; i < 21; i++) {
+      for (let i = 0; i < 41; i++) {
         if (this.audios[i].played) {
           this.audios[i].currentTime = 0
           this.audios[i].pause()
@@ -177,6 +177,106 @@ export class AppComponent implements AfterViewInit {
       if (evento['indexh'] === 11 && evento['indexv'] === 8) {
         this.audios[20].volume = 0.2
         this.audios[20].play()
+      }
+
+      if (evento['indexh'] === 12 && evento['indexv'] === 0) {
+        this.audios[21].volume = 0.2
+        this.audios[21].play()
+      }
+
+      if (evento['indexh'] === 12 && evento['indexv'] === 1) {
+        this.audios[22].volume = 0.2
+        this.audios[22].play()
+      }
+
+      if (evento['indexh'] === 13 && evento['indexv'] === 0) {
+        this.audios[23].volume = 0.2
+        this.audios[23].play()
+      }
+
+      if (evento['indexh'] === 14 && evento['indexv'] === 0) {
+        this.audios[24].volume = 0.2
+        this.audios[24].play()
+      }
+
+      if (evento['indexh'] === 14 && evento['indexv'] === 1) {
+        this.audios[25].volume = 0.2
+        this.audios[25].play()
+      }
+
+      if (evento['indexh'] === 15 && evento['indexv'] === 0) {
+        this.audios[26].volume = 0.2
+        this.audios[26].play()
+      }
+
+      if (evento['indexh'] === 15 && evento['indexv'] === 1) {
+        this.audios[27].volume = 0.2
+        this.audios[27].play()
+      }
+
+      if (evento['indexh'] === 15 && evento['indexv'] === 2) {
+        this.audios[28].volume = 0.2
+        this.audios[28].play()
+      }
+
+      if (evento['indexh'] === 15 && evento['indexv'] === 3) {
+        this.audios[29].volume = 0.2
+        this.audios[29].play()
+      }
+
+      if (evento['indexh'] === 15 && evento['indexv'] === 4) {
+        this.audios[30].volume = 0.2
+        this.audios[30].play()
+      }
+
+      if (evento['indexh'] === 15 && evento['indexv'] === 5) {
+        this.audios[31].volume = 0.2
+        this.audios[31].play()
+      }
+
+      if (evento['indexh'] === 15 && evento['indexv'] === 6) {
+        this.audios[32].volume = 0.2
+        this.audios[32].play()
+      }
+
+      if (evento['indexh'] === 15 && evento['indexv'] === 7) {
+        this.audios[33].volume = 0.2
+        this.audios[33].play()
+      }
+
+      if (evento['indexh'] === 15 && evento['indexv'] === 8) {
+        this.audios[34].volume = 0.2
+        this.audios[34].play()
+      }
+
+      if (evento['indexh'] === 15 && evento['indexv'] === 9) {
+        this.audios[35].volume = 0.2
+        this.audios[35].play()
+      }
+
+      if (evento['indexh'] === 15 && evento['indexv'] === 10) {
+        this.audios[36].volume = 0.2
+        this.audios[36].play()
+      }
+
+      if (evento['indexh'] === 15 && evento['indexv'] === 11) {
+        this.audios[37].volume = 0.2
+        this.audios[37].play()
+      }
+
+      if (evento['indexh'] === 15 && evento['indexv'] === 12) {
+        this.audios[38].volume = 0.2
+        this.audios[38].play()
+      }
+
+      if (evento['indexh'] === 16 && evento['indexv'] === 0) {
+        this.audios[39].volume = 0.2
+        this.audios[39].play()
+      }
+
+      if (evento['indexh'] === 16 && evento['indexv'] === 1) {
+        this.audios[40].volume = 0.2
+        this.audios[40].play()
       }
 
 
