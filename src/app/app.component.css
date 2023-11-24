@@ -90,7 +90,7 @@ i {
 }
 
 /* POP */
-.pop1 , .pop2, .pop3, .pop4{
+.pop1 , .pop2, .pop3, .pop4, .pop5, .pop6, .pop7, .pop8{
   position: absolute;
   z-index: 10;
   background: rgba(0, 0, 0, 0.51);
@@ -181,6 +181,13 @@ ol {
   font-size: 30px;
 }
 
+#type2{
+  font-size: 20px !important;
+  font-weight: 400;
+  text-align:justify ;
+  margin: 20px 60px 20px 60px;
+}
+
 /*----------------------   */
 
 .dia2 > .fragment, .init{
@@ -192,7 +199,7 @@ ol {
   font-size: 30px;
   text-align: justify;
   cursor: default;
-  font-weight: 100;
+  font-weight: 100 !important;
 }
 
 .center > strong {
@@ -256,6 +263,16 @@ img:hover{
   display: none !important;
 }
 
+#lista{
+  list-style-type: upper-roman;
+  margin: 20px 13% 0px 13%;
+  font-size: 20px;
+}
+
+#img-title{
+  width: 500px;
+  height: 300px;
+}
 
 
 @media only screen and (min-width: 600px) and (max-width: 1440px) {
@@ -345,6 +362,8 @@ img:hover{
   }
   
 }
+
+
 
 
 /*EFECTS*/

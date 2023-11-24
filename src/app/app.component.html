@@ -157,7 +157,7 @@
       </div>
       <div class="images">
         <img src="" alt="">
-        <img src="assets/8.webp" alt="" class="imgs">
+        <img src="assets/8.webp" alt="" class="imgs" id="img-title">
         <img src="" alt="">
       </div>
       <i class="fa-solid fa-play" (click)="control(9)"></i>
@@ -168,15 +168,21 @@
     <!-- 9 -->
     <section>
       <div class="diapositiva-text">
-        <ol id="opc">
-          <li>Inscripción en los padrones respectivos</li>
-          <li>Selección y contratación del agente o agencia aduanal</li>
-          <li>Otorgamiento del encargo conferido al agente o agencia aduanal</li>
-          <li>Clasificación arancelaria y determinación de las contribuciones</li>
-          <li> Preparación de la documentación que se debe anexar al pedimento</li>
-          <li> Elaboración del pedimento en formato oficial</li>
-          <li> Prevalidación y validación del pedimento en el SAAI</li>
-        </ol>
+        <br>
+        <div class="img-text">
+          <img src="assets/12.jpeg" alt="">
+          <div class="center">
+            <ol id="opc">
+              <li (click)="goToSlide(11,0)">Inscripción en los padrones respectivos</li>
+              <li (click)="goToSlide(12,0)">Selección y contratación del agente o agencia aduanal</li>
+              <li (click)="goToSlide(13,0)">Otorgamiento del encargo conferido al agente o agencia aduanal</li>
+              <li (click)="goToSlide(14,0)">Clasificación arancelaria y determinación de las contribuciones</li>
+              <li (click)="goToSlide(15,0)"> Preparación de la documentación que se debe anexar al pedimento</li>
+              <li (click)="goToSlide(16,0)"> Elaboración del pedimento en formato oficial</li>
+              <li (click)="goToSlide(17,0)"> Prevalidación y validación del pedimento en el SAAI</li>
+            </ol>
+          </div>
+        </div>
       </div>
       <i class="fa-solid fa-play" (click)="control(10)"></i>
       <i class="fa-solid fa-circle-arrow-left" (click)="goToSlide(8,0)"></i>
@@ -186,15 +192,22 @@
     <!-- 10 -->
     <section>
       <div class="diapositiva-text">
-        <ol start="8" id="opc">
-          <li> Pago de las contribuciones, y aprovechamientos en los bancos autorizados</li>
-         <li> Arribo de la mercancía a territorio nacional por lugar autorizado</li>
-         <li> Presentar la mercancía ante el mecanismo de selección automatizado</li>
-         <li> Si corresponde reconocimiento aduanero se debe practicar la verificación</li>
-         <li> En caso de incidencia, proceder a la determinación de contribuciones y multas, al embargo o retención</li>
-         <li> De no existir irregularidades se liberará la mercancía de inmediato</li>
-          <li>Conclusión del despacho aduanero.</li>
-        </ol>
+        <br>
+        <div class="img-text">
+          <img src="assets/16.webp" alt="">
+          <div class="center">
+            <ol start="8" id="opc">
+              <li> Pago de las contribuciones, y aprovechamientos en los bancos autorizados</li>
+              <li> Arribo de la mercancía a territorio nacional por lugar autorizado</li>
+              <li> Presentar la mercancía ante el mecanismo de selección automatizado</li>
+              <li> Si corresponde reconocimiento aduanero se debe practicar la verificación</li>
+              <li> En caso de incidencia, proceder a la determinación de contribuciones y multas, al embargo o retención
+              </li>
+              <li> De no existir irregularidades se liberará la mercancía de inmediato</li>
+              <li>Conclusión del despacho aduanero.</li>
+            </ol>
+          </div>
+        </div>
       </div>
       <i class="fa-solid fa-play" (click)="control(11)"></i>
       <i class="fa-solid fa-circle-arrow-left" id="anim9" (click)="goToSlide(9,0)"></i>
@@ -204,10 +217,554 @@
 
     <!-- 11 -->
     <section>
-      
+      <!-- 11.0 a) -->
+      <section>
+        <div class="diapositiva-text">
+          <br>
+          <div class="img-text">
+            <img src="assets/9.webp" alt="">
+            <div class="center">
+              <strong>a) Padrón de importadores </strong>
+              El padrón de importadores es un registro del SAT en el que todas las personas físicas y morales deben
+              inscribirse para poder ingresar productos extranjeros a territorio nacional.
+            </div>
+          </div>
+        </div>
+        <i class="fa-solid fa-play" (click)="control(12)"></i>
+        <i class="fa-solid fa-circle-arrow-left" (click)="goToSlide(9,0)"></i>
+        <i class="fa-solid fa-circle-arrow-right" id="anim10" (click)="goToSlide(11,1)"></i>
+      </section>
+      <!-- 11.1 -->
+      <section>
+        <div class="diapositiva-text">
+          <div class="center">
+            <strong>Requisitos Generales para inscribirse</strong>
+            <li>Presentar solicitud en términos del Artículo 82, primer párrafo del Reglamento de la Ley Aduanera y
+              cumplir con la Regla General de Comercio Exterior 1.3.2.</li>
+            <li>Ley Aduanera artículo 82. Para inscribirse en el Padrón de Importadores a que se refiere el artículo 59,
+              fracción IV de la Ley, los interesados deberán presentar ante la Autoridad Aduanera solicitud cumpliendo
+              con los siguientes <a (click)="pop5 = !pop5">requisitos</a></li>
+          </div>
+        </div>
+        <i class="fa-solid fa-play" (click)="control(13)"></i>
+        <i class="fa-solid fa-circle-arrow-left" (click)="goToSlide(11,0)"></i>
+        <i class="fa-solid fa-circle-arrow-right" id="anim11" (click)="goToSlide(11,2)"></i>
+      </section>
+      <!-- 11.2 -->
+      <section>
+        <div class="diapositiva-text">
+          La autoridad aduanera resolverá la solicitud de inscripción en el Padrón de Importadores y en el Padrón de
+          Importadores de Sectores Específicos en un plazo de diez días contado a partir del día siguiente al de la
+          recepción de la solicitud respectiva
+        </div>
+        <i class="fa-solid fa-play" (click)="control(14)"></i>
+        <i class="fa-solid fa-circle-arrow-left" (click)="goToSlide(11,1)"></i>
+        <i class="fa-solid fa-circle-arrow-right" id="anim12" (click)="goToSlide(11,3)"></i>
+      </section>
+      <!--  11.3 -->
+      <section>
+        <div class="diapositiva-text">
+          <div class="center">
+            <strong>Requisitos Específicos para inscribirse</strong>
+            Las dependencias y entidades de la Administración Pública Federal, las empresas productivas del Estado, sus
+            subsidiarias o filiales, los Poderes Legislativo y Judicial de la Federación, las entidades federativas y
+            municipios, podrán inscribirse en el Padrón de Importadores cumpliendo los requisitos que se establezcan en
+            la Regla General de Comercio Exterior 1.3.2. <span>(Artículo 83 Reglamento de la Ley Aduanera)</span>.
+          </div>
+        </div>
+        <i class="fa-solid fa-play" (click)="control(15)"></i>
+        <i class="fa-solid fa-circle-arrow-left" (click)="goToSlide(11,2)"></i>
+        <i class="fa-solid fa-circle-arrow-right" id="anim13" (click)="goToSlide(11,4)"></i>
+      </section>
+      <!-- 11.4 b) -->
+      <section>
+        <div class="diapositiva-text">
+          <br>
+          <div class="img-text">
+            <img src="assets/10.png" alt="">
+            <div class="center">
+              <strong>b) Padrón de Importadores de Sectores Específicos </strong>
+              El PADRÓN SECTORIAL es un registro adicional obligatorio, al igual que el PADRÓN DE IMPORTADORES, para los
+              contribuyentes que pretendan realizar operaciones de Importación y/o Exportación de mercancías sensibles
+              consideradas dentro los sectores productivos.
+            </div>
+          </div>
+        </div>
+        <i class="fa-solid fa-play" (click)="control(16)"></i>
+        <i class="fa-solid fa-circle-arrow-left" (click)="goToSlide(11,3)"></i>
+        <i class="fa-solid fa-circle-arrow-right" id="anim14" (click)="goToSlide(11,5)"></i>
+      </section>
+      <!-- 11.5 -->
+      <section>
+        <div class="diapositiva-text">
+          <div class="center">
+            <strong>Requisitos Generales para inscribirse</strong>
+            Únicamente mercancías listadas en el Apartado A del Anexo 10, cuando se importen temporalmente o
+            definitivamente o a depósito fiscal, a elaboración o reparación en recinto fiscalizado o a recinto
+            fiscalizado estratégico.
+            Presentar solicitud en términos del <a (click)="pop6 = !pop6">Articulo 82</a> segundo párrafo del Reglamento
+            de la Ley Aduanera y cumplir
+            con la Regla General de Comercio Exterior 1.3.2.
+          </div>
+        </div>
+        <i class="fa-solid fa-play" (click)="control(17)"></i>
+        <i class="fa-solid fa-circle-arrow-left" (click)="goToSlide(11,4)"></i>
+        <i class="fa-solid fa-circle-arrow-right" id="anim15" (click)="goToSlide(11,6)"></i>
+      </section>
+      <!-- 11.6 -->
+      <section>
+        <div class="diapositiva-text">
+          La autoridad aduanera resolverá la solicitud de inscripción en el Padrón de Importadores y en el Padrón de
+          Importadores de Sectores Específicos en un plazo de diez días contado a partir del día siguiente al de la
+          recepción de la solicitud respectiva.
+        </div>
+        <i class="fa-solid fa-play" (click)="control(18)"></i>
+        <i class="fa-solid fa-circle-arrow-left" (click)="goToSlide(11,5)"></i>
+        <i class="fa-solid fa-circle-arrow-right" id="anim16" (click)="goToSlide(11,7)"></i>
+      </section>
+      <!-- 11.7 c) -->
+      <section>
+        <div class="diapositiva-text">
+          <br>
+          <div class="img-text">
+            <img src="assets/11.png" alt="">
+            <div class="center">
+              <strong>c) Padrón de Exportadores Sectorial </strong>
+              Presentar solicitud en términos del Artículo 87 del Reglamento de la Ley Aduanera y cumplir con la Regla
+              General de Comercio Exterior 1.3.7.
+            </div>
+          </div>
+        </div>
+        <i class="fa-solid fa-play" (click)="control(19)"></i>
+        <i class="fa-solid fa-circle-arrow-left" (click)="goToSlide(11,6)"></i>
+        <i class="fa-solid fa-circle-arrow-right" id="anim17" (click)="goToSlide(11,8)"></i>
+      </section>
+      <!-- 11.8 -->
+      <section>
+        <div class="diapositiva-text">
+          Ley Aduanera artículo 87. Para efectos del artículo 59, fracción IV de la Ley, así como el artículo 19,
+          fracción XI de la Ley del Impuesto Especial sobre Producción y Servicios, quienes requieran exportar las
+          Mercancías de los sectores correspondientes deberán estar inscritos en el Padrón de Exportadores Sectorial,
+          para lo cual deberán solicitar su inscripción, debiendo cumplir con los siguientes <a
+            (click)="pop7 = !pop7">requisitos</a>.
+        </div>
+        <i class="fa-solid fa-play" (click)="control(20)"></i>
+        <i class="fa-solid fa-circle-arrow-left" (click)="goToSlide(11,7)"></i>
+        <i class="fa-solid fa-reply-all" id="anim18" (click)="goToSlide(11,0)"></i>
+      </section>
     </section>
 
+    <!-- 12 -->
+    <section>
+      <!-- 12.0 -->
+      <section>
+        <div class="diapositiva-text">
+          <strong>Artículo 159 de la Ley Aduanera.</strong> Agente aduanal es la persona física autorizada por el
+          Servicio de
+          Administración Tributaria, mediante una patente, para promover por cuenta ajena el despacho de las mercancías,
+          en los diferentes regímenes aduaneros previstos en esta Ley.
+        </div>
+        <i class="fa-solid fa-play" (click)="control(21)"></i>
+        <i class="fa-solid fa-circle-arrow-left" (click)="goToSlide(9,0)"></i>
+        <i class="fa-solid fa-circle-arrow-right" id="anim19" (click)="goToSlide(12,1)"></i>
+      </section>
+      <!-- 12.1 -->
+      <section>
+        <div class="diapositiva-text">
+          <strong>Artículo 167-D de la Ley Aduanera.</strong> La Agencia Aduanal es la persona moral autorizada por el
+          Servicio de
+          Administración Tributaria para promover por cuenta ajena el despacho aduanero de mercancías, en los diferentes
+          regímenes aduaneros previstos en esta Ley.
+        </div>
+        <i class="fa-solid fa-play" (click)="control(22)"></i>
+        <i class="fa-solid fa-circle-arrow-left" id="anim20" (click)="goToSlide(12,0)"></i>
+      </section>
+    </section>
 
+    <!-- 13 -->
+    <section>
+      <div class="diapositiva-text">
+        Es el trámite por el cual una persona, ya sea física o moral, le notifica al SAT cuáles son los agentes
+        aduanales que tienen la autorización de hacer despachos a su favor. <br>
+
+        Es el permiso que se le otorga al agente aduanal para transmitir al Sistema de Automatización Aduanera Integral
+        (SAAI) pedimentos a nombre y RFC del importador y exportador que lo realizó. Dicho trámite es gratuito y se
+        presenta por internet en el portal del Servicio de Administracion Tributaria con el uso de la e.firma. <br>
+
+        <small>Artículo 59 fracción III de la Ley Aduanera, en relación con la Regla General de Comercio Exterior
+          1.2.6).</small>
+
+      </div>
+      <i class="fa-solid fa-play" (click)="control(23)"></i>
+      <i class="fa-solid fa-circle-arrow-left" id="anim21" (click)="goToSlide(9,0)"></i>
+    </section>
+
+    <!-- 14 -->
+    <section>
+      <!-- 14.0 -->
+      <section>
+        <div class="diapositiva-text">
+          <strong>Ley Aduanera ARTICULO 81.</strong> Los importadores y exportadores, las agencias aduanales o los
+          agentes aduanales,
+          cuando actúen por cuenta de aquéllos, determinarán las contribuciones y, en su caso, las cuotas
+          compensatorias, para lo cual manifestarán, bajo protesta de decir verdad, en el pedimento o documento aduanero
+          de que se trate, respecto de las mercancías, lo <a (click)="pop8 = !pop8">siguiente</a>.
+        </div>
+        <i class="fa-solid fa-play" (click)="control(24)"></i>
+        <i class="fa-solid fa-circle-arrow-left" (click)="goToSlide(9,0)"></i>
+        <i class="fa-solid fa-circle-arrow-right" id="anim22" (click)="goToSlide(14,1)"></i>
+      </section>
+      <!-- 14.1 -->
+      <section>
+        <div class="diapositiva-text">
+          De conformidad con el Art. 54 de la Ley Aduanera, es responsabilidad del Agente Aduanal:
+          <li>Determinar el régimen aduanero de las mercancías (Artículo 90 de la Ley Aduanera) y de su correcta
+            clasificación arancelaria.</li> <br>
+          Para poder determinar la fracción arancelaria que permita la importación o exportación de las mercancías, el
+          A.A puede requerir de su cliente la siguiente información: <br>
+
+          <ol>
+            <li>Fotografías del producto, manuales, catálogos o Página web.</li>
+            <li>Marca comercial y Modelo, Números de serie o número de lote, País de origen.</li>
+            <li>Ficha técnica del producto (mercancías de difícil identificación cómo lo son los químicos).</li>
+            <li>Hoja de seguridad para el caso de mercancías peligrosas.</li>
+          </ol>
+
+        </div>
+        <i class="fa-solid fa-play" (click)="control(25)"></i>
+        <i class="fa-solid fa-circle-arrow-left" id="anim23" (click)="goToSlide(14,0)"></i>
+      </section>
+    </section>
+
+    <!-- 15 -->
+    <section>
+      <!-- 15.0 a) -->
+      <section>
+        <div class="diapositiva-text">
+          <div class="center">
+            <strong class="mainTitles">a) En importación</strong>
+          </div>
+        </div>
+        <div class="images">
+          <img src="" alt="">
+          <img src="assets/13.jpeg" alt="" class="imgs" id="img-title">
+          <img src="" alt="">
+        </div>
+        <i class="fa-solid fa-play" (click)="control(26)"></i>
+        <i class="fa-solid fa-circle-arrow-left" (click)="goToSlide(9,0)"></i>
+        <i class="fa-solid fa-circle-arrow-right" id="anim24" (click)="goToSlide(15,1)"></i>
+      </section>
+      <!-- 15.1 -->
+      <section>
+        <div class="diapositiva-text">
+          <div class="center">
+            <strong>
+              <li>La relativa al valor y demás datos relacionados con la comercialización
+                de las mercancías contenidosen el comprobante fiscal digital.</li>
+            </strong>
+            Documento electrónico que contiene la información de las mercancías relativa a su valor y, en su caso, demás
+            datos relacionados con su comercialización, antes de su despacho aduanero, en términos del artículo 59-A de
+            la
+            Ley Aduanera. <br>
+            <small>(Infracción artículo 184-A, multa artículo 184-B de la Ley Aduanera)</small>
+          </div>
+        </div>
+        <i class="fa-solid fa-play" (click)="control(27)"></i>
+        <i class="fa-solid fa-circle-arrow-left" (click)="goToSlide(15,0)"></i>
+        <i class="fa-solid fa-circle-arrow-right" id="anim25" (click)="goToSlide(15,2)"></i>
+      </section>
+      <!-- 15.2 -->
+      <section>
+        <div class="diapositiva-text">
+          <div class="center">
+            <strong>
+              <li>Conocimiento de embarque, lista de empaque, guía o demás documentos de transporte</li>
+            </strong>
+
+            La lista de empaque permite identificar el embarque y todos sus elementos (forma de embalaje, cantidades,
+            pesos, marcas, medidas, series, partes, etc.), contribuyendo a mejorar los controles y revisiones aduaneras
+            en
+            labores de embarque y desembarque, a la vez que ayuda a corregir cualquier daño o faltante durante el
+            traslado
+            de sus mercancías e ingreso a almacén. <br>
+
+            <small>(Infracción artículo 184 fracción I, multa 185 fracción I de la Ley Aduanera)</small>
+          </div>
+        </div>
+        <i class="fa-solid fa-play" (click)="control(27)"></i>
+        <i class="fa-solid fa-circle-arrow-left" (click)="goToSlide(15,1)"></i>
+        <i class="fa-solid fa-circle-arrow-right" id="anim37" (click)="goToSlide(15,3)"></i>
+      </section>
+      <!-- 15.3 -->
+      <section>
+        <div class="diapositiva-text">
+          <div class="center">
+            <strong>
+              <li>La que compruebe el cumplimiento de las Regulaciones y Restricciones no Arancelarias.</li>
+            </strong>
+            La que compruebe el cumplimiento de las regulaciones y restricciones no arancelarias a la importación, que
+            se
+            hubieran expedido de acuerdo con la Ley de Comercio Exterior, siempre que las mismas se publiquen en el
+            Diario
+            Oficial de la Federación y se identifiquen en términos de la fracción arancelaria y de la nomenclatura que
+            les
+            corresponda conforme a la Tarifa de la Ley de los Impuestos Generales de Importación y de Exportación.
+          </div>
+        </div>
+        <i class="fa-solid fa-play" (click)="control(28)"></i>
+        <i class="fa-solid fa-circle-arrow-left" (click)="goToSlide(15,1)"></i>
+        <i class="fa-solid fa-circle-arrow-right" id="anim38" (click)="goToSlide(15,4)"></i>
+      </section>
+      <!-- 15.4 -->
+      <section>
+        <div class="diapositiva-text">
+          <div class="center">
+            <strong>Artículo 17 A de la Ley de Comercio Exterior:</strong>
+            Las restricciones y regulaciones no arancelarias, deberán cumplirse conforme a lo establecido en los
+            ordenamientos aplicables.
+
+            Dicho cumplimiento deberá demostrarse mediante documentos que contengan medidas de seguridad o a través de
+            medios electrónicos, o ambos, que determine la Secretaría, conjuntamente con las Dependencias y Entidades
+            de la Administración Pública Federal que corresponda, con excepción de los que hayan sido pactados con
+            países con los que México haya suscrito algún acuerdo o tratado de libre comercio.
+
+            Los documentos a que se refiere este artículo deberán acompañar al pedimento que se presente ante la
+            aduana por conducto del agente o apoderado aduanal, en los términos de la legislación aduanera.
+            <br>
+            <small>(Infracción artículo 184 fracción IV, multa 185 fracción III de la Ley Aduanera)</small>
+
+          </div>
+        </div>
+        <i class="fa-solid fa-play" (click)="control(29)"></i>
+        <i class="fa-solid fa-circle-arrow-left" (click)="goToSlide(15,3)"></i>
+        <i class="fa-solid fa-circle-arrow-right" id="anim26" (click)="goToSlide(15,5)"></i>
+      </section>
+      <!-- 15.5 -->
+      <section>
+        <div class="diapositiva-text">
+          <div class="center">
+            <strong>
+              <li>La que determine la procedencia y el origen de las mercancías</li>
+            </strong>
+            La que determine la procedencia y el origen de las mercancías para efectos de la aplicación de preferencias
+            arancelarias, cuotas compensatorias, cupos, marcado de país de origen y otras medidas que al efecto se
+            establezcan, de conformidad con las disposiciones aplicables.
+
+            El término “origen” es el país donde se obtuvieron o fabricaron las mercancías, mientras que “procedencia”
+            (aunque también significa origen) se refiere al país de donde llegaron esas mercancías, es decir, el país de
+            exportación.
+
+          </div>
+        </div>
+        <i class="fa-solid fa-play" (click)="control(30)"></i>
+        <i class="fa-solid fa-circle-arrow-left" (click)="goToSlide(15,4)"></i>
+        <i class="fa-solid fa-circle-arrow-right" id="anim27" (click)="goToSlide(15,6)"></i>
+      </section>
+      <!-- 15.6 -->
+      <section>
+        <div class="diapositiva-text">
+          <div class="center">
+            El certificado de <span class="destacar">origen</span> –que incluye datos como el domicilio del exportador,
+            el número de registro fiscal y
+            la fracción arancelaria– es un documento primordial para comprobar el país o región de donde provienen tus
+            mercancías. Gracias al certificado, puedes obtener preferencias arancelarias y demostrar que estás
+            cumpliendo con las reglas establecidas en los tratados y acuerdos comerciales que tiene México con otros
+            países.
+            <br>
+            <small>(Infracción artículo 184 fracción IV, multa 185 fracción III de la Ley Aduanera).</small>
+          </div>
+        </div>
+        <i class="fa-solid fa-play" (click)="control(31)"></i>
+        <i class="fa-solid fa-circle-arrow-left" (click)="goToSlide(15,5)"></i>
+        <i class="fa-solid fa-circle-arrow-right" id="anim28" (click)="goToSlide(15,7)"></i>
+      </section>
+      <!-- 15.7 -->
+      <section>
+        <div class="diapositiva-text">
+          <strong>
+            <li>La del documento digital en la que conste la garantía</li>
+          </strong> <br>
+          La del documento digital en el que conste la garantía efectuada en la cuenta aduanera de garantía a que se
+          refiere el artículo 84-A de la Ley Aduanera, cuando el valor declarado sea inferior al precio estimado que
+          establezca la Secretaría de Hacienda y Crédito Público.
+          <small>(Infracción artículo 184 fracción I, Retención artículo 158 fracción I, multa artículo 185 fracción I
+            de la
+            Ley Aduanera)</small>
+        </div>
+        <i class="fa-solid fa-play" (click)="control(32)"></i>
+        <i class="fa-solid fa-circle-arrow-left" (click)="goToSlide(15,6)"></i>
+        <i class="fa-solid fa-circle-arrow-right" id="anim29" (click)="goToSlide(15,8)"></i>
+      </section>
+      <!-- 15.8 -->
+      <section>
+        <div class="diapositiva-text">
+          <strong>
+            <li>El dictamen de medición de peso y volumen</li>
+          </strong> <br>
+          En el documento se hace constar el peso de la mercancía (neto y bruto) bulto por bulto de toda la expedición
+          y cualquier otro dato tendente a servir de prueba en lo que se refiere a pesos que tendrían las mercancías
+          en el momento de la expedición.
+        </div>
+        <i class="fa-solid fa-play" (click)="control(33)"></i>
+        <i class="fa-solid fa-circle-arrow-left" (click)="goToSlide(15,7)"></i>
+        <i class="fa-solid fa-circle-arrow-right" id="anim30" (click)="goToSlide(15,9)"></i>
+      </section>
+      <!-- 15.9 b) -->
+      <section>
+        <div class="diapositiva-text">
+          <div class="center">
+            <strong class="mainTitles">b) En exportación</strong>
+          </div>
+        </div>
+        <div class="images">
+          <img src="" alt="">
+          <img src="assets/14.jpeg" alt="" class="imgs" id="img-title">
+          <img src="" alt="">
+        </div>
+        <i class="fa-solid fa-play" (click)="control(34)"></i>
+        <i class="fa-solid fa-circle-arrow-left" (click)="goToSlide(15,8)"></i>
+        <i class="fa-solid fa-circle-arrow-right" id="anim31" (click)="goToSlide(15,10)"></i>
+      </section>
+      <!-- 15.10 -->
+      <section>
+        <div class="diapositiva-text">
+          <strong>
+            <li>La relativa al valor y demás datos relacionados con la comercialización de las mercancías, contenidos en
+              el comprobante fiscal digital </li>
+          </strong> <br>
+          Documento electrónico que contiene la información de las mercancías relativa a su valor y, en su caso, demás
+          datos relacionados con su comercialización, antes de su despacho aduanero, en términos del artículo 59-A de la
+          Ley Aduanera
+          <br>
+          <small>(Infracción artículo 184 fracción I, multa 185 fracción I de la Ley Aduanera)</small>
+        </div>
+        <i class="fa-solid fa-play" (click)="control(35)"></i>
+        <i class="fa-solid fa-circle-arrow-left" (click)="goToSlide(15,9)"></i>
+        <i class="fa-solid fa-circle-arrow-right" id="anim32" (click)="goToSlide(15,11)"></i>
+      </section>
+      <!-- 15.11 -->
+      <section>
+        <div class="diapositiva-text">
+          <strong>
+            <li>La relativa al valor y demás datos relacionados con la comercialización de las mercancías, contenidos
+              en el comprobante fiscal digital </li>
+          </strong> <br>
+          Documento electrónico que contiene la información de las mercancías relativa a su valor y, en su caso, demás
+          datos relacionados con su comercialización, antes de su despacho aduanero, en términos del artículo 59-A de la
+          Ley Aduanera <br>
+          <small>(Infracción artículo 184 fracción I, multa 185 fracción I de la Ley Aduanera)</small>
+        </div>
+        <i class="fa-solid fa-play" (click)="control(36)"></i>
+        <i class="fa-solid fa-circle-arrow-left" (click)="goToSlide(15,10)"></i>
+        <i class="fa-solid fa-circle-arrow-right" id="anim33" (click)="goToSlide(15,12)"></i>
+      </section>
+      <!-- 15.12 -->
+      <section>
+        <div class="diapositiva-text">
+          <strong>
+            <li>La que compruebe el cumplimiento de las regulaciones y restricciones no arancelarias. </li>
+          </strong> <br>
+          La que compruebe el cumplimiento de las regulaciones y restricciones no arancelarias a la importación, que se
+          hubieran expedido de acuerdo con la Ley de Comercio Exterior, siempre que las mismas se publiquen en el Diario
+          Oficial de la Federación y se identifiquen en términos de la fracción arancelaria y de la nomenclatura que les
+          corresponda conforme a la Tarifa de la Ley de los Impuestos Generales de Importación y de Exportación. <br>
+          <small>(Infracción artículo 184 fracción I, multa 185 fracción I de la Ley Aduanera)</small>
+        </div>
+        <i class="fa-solid fa-play" (click)="control(37)"></i>
+        <i class="fa-solid fa-circle-arrow-left" (click)="goToSlide(15,11)"></i>
+        <i class="fa-solid fa-circle-arrow-right" id="anim34" (click)="goToSlide(15,13)"></i>
+      </section>
+      <!-- 15.13 -->
+      <section>
+        <div class="diapositiva-text">
+          <div class="center">
+            <strong>Artículo 17-A de la Ley de Comercio Exterior:</strong>
+            Las restricciones y regulaciones no arancelarias, deberán cumplirse conforme a lo establecido en los
+            ordenamientos aplicables.
+
+            Dicho cumplimiento deberá demostrarse mediante documentos que contengan medidas de seguridad o a través de
+            medios electrónicos, o ambos, que determine la Secretaría, conjuntamente con las Dependencias y Entidades de
+            la Administración Pública Federal que corresponda, con excepción de los que hayan sido pactados con países
+            con los que México haya suscrito algún acuerdo o tratado de libre comercio.
+
+            Los documentos a que se refiere este artículo deberán acompañar al pedimento que se presente ante la aduana
+            por conducto del agente o apoderado aduanal, en los términos de la legislación aduanera.
+
+            <br>
+            <small>(Infracción artículo 184 fracción IV o XIV, multa artículo 185 fracción III o XIII de la Ley
+              Aduanera)</small>
+
+          </div>
+        </div>
+        <i class="fa-solid fa-play" (click)="control(38)"></i>
+        <i class="fa-solid fa-circle-arrow-left" (click)="goToSlide(15,12)"></i>
+        <i class="fa-solid fa-reply-all" id="anim35" (click)="goToSlide(15,0)"></i>
+      </section>
+    </section>
+
+    <!-- 16 -->
+    <section>
+      <!-- 16.0 -->
+      <section>
+        <div class="diapositiva-text">
+          <div class="center">
+            <strong>
+              <li>¿Qué es el pedimento?</li>
+            </strong>
+            Es la declaración en documento electrónico, generada y transmitida respecto del cumplimiento de los
+            ordenamientos que gravan y regulan la entrada o salida de mercancías del territorio nacional, en la que se
+            contiene la información relativa a las mercancías, el tráfico y régimen aduanero al que se destinan, y los
+            demás datos exigidos para cumplir con las formalidades de su entrada o salida del territorio nacional, así
+            como la exigida conforme a las disposiciones aplicables (Artículo 2 fracción XVI de la Ley Aduanera).
+          </div>
+        </div>
+        <i class="fa-solid fa-play" (click)="control(39)"></i>
+        <i class="fa-solid fa-circle-arrow-left" (click)="goToSlide(9,0)"></i>
+        <i class="fa-solid fa-circle-arrow-right" id="anim39" (click)="goToSlide(16,1)"></i>
+      </section>
+      <!-- 16.1 -->
+      <section>
+        <div class="diapositiva-text">
+          <div class="center">
+            <strong>
+              <li>Formato</li>
+            </strong>
+            El pedimento (Anexo 1, Apartado M1.1), con su respectivo instructivo de llenado (Anexo 22) que deben ser
+            utilizados en materia de comercio exterior, se encuentran en los Anexos de las Reglas Generales de Comercio
+            Exterior.
+            Está conformado por bloques. Debe imprimirse únicamente la información que deba ser declarada.
+          </div>
+        </div>
+        <i class="fa-solid fa-play" (click)="control(40)"></i>
+        <i class="fa-solid fa-circle-arrow-left" id="anim40" (click)="goToSlide(16,0)"></i>
+      </section>
+    </section>
+
+    <!-- 17 -->
+    <section>
+      <div class="diapositiva-text">
+        <br>
+        <div class="img-text">
+          <img src="assets/15.jpeg" alt="">
+          <div class="center">
+            Se llevará a cabo por las empresas autorizadas, estas generarán un archivo que se enviará para su aceptación
+            (validación) al SAAI.
+            <br>
+            El SAAI verificará que el archivo cumpla con los criterios señalados y, en caso de no detectarse ningún
+            error en su contenido arrojará el acuse electrónico de aceptación (validación) con el cual se considerará
+            que el pedimento ha sido validado.
+            <br>
+            El acuse de aceptación (validación), debe asentarse en el pedimento e incluirse en la información que debe
+            contener el código de barras, del Apéndice 17 del Anexo 22 de las Reglas Generales de Comercio Exterior.
+
+          </div>
+        </div>
+      </div>
+      <i class="fa-solid fa-play" (click)="control(5)"></i>
+      <i class="fa-solid fa-circle-arrow-left" id="anim36" (click)="goToSlide(9,0)"></i>
+    </section>
+
+    <!-- 18 -->
 
 
   </div>
@@ -274,5 +831,65 @@
       consideren inalienables o irreductibles a propiedad particular, <strong>Artículo 2 fracción III, Ley
         Aduanera</strong>
     </div>
+  </div>
+</div>
+
+<!-- Pop's diapositiva 11 -->
+<div class="pop5" (click)="pop5 = !pop5" *ngIf="pop5" [@fadeInOut]>
+  <div class="contenedorB" (click)="noClose($event)">
+    <i class="fa-solid fa-xmark" (click)="pop5 = !pop5"></i>
+    <ol id="lista">
+      <li>Estar inscrito y activo en el registro federal de contribuyentes.</li>
+      <li>Contar con firma electrónica avanzada vigente.</li>
+      <li>Presentar la constancia de cumplimiento de las obligaciones fiscales, prevista en el artículo 32-Ddel Código
+        Fiscal de la Federación.</li>
+      <li>Los demás requisitos establecidos en las Reglas que al efecto emita el SAT.</li>
+    </ol>
+  </div>
+</div>
+
+<div class="pop6" (click)="pop6 = !pop6" *ngIf="pop6" [@fadeInOut]>
+  <div class="contenedorA" (click)="noClose($event)">
+    <i class="fa-solid fa-xmark" (click)="pop6 = !pop6"></i>
+    <div>Artículo 82 del Reglamento de la Ley Aduanera</div>
+    <div class="pop-body" id="type2">Para inscribirse en el Padrón de Importadores de Sectores Específicos, además de
+      cumplir con
+      lo previsto en el
+      párrafo anterior, deberán:</div>
+    <ol id="lista">
+      <li>Estar inscrito y activo en el Padrón de Importadores</li>
+      <li>Acreditar los requisitos y anexar los documentos que señale el SAT mediante Reglas, según se trate, del sector
+        específico solicitado.</li>
+    </ol>
+  </div>
+</div>
+
+<div class="pop7" (click)="pop7 = !pop7" *ngIf="pop7" [@fadeInOut]>
+  <div class="contenedorB" (click)="noClose($event)">
+    <i class="fa-solid fa-xmark" (click)="pop7 = !pop7"></i>
+    <ol id="lista">
+      <li>Estar inscrito y activo en el registro federal de contribuyentes.</li>
+      <li>Contar con firma electrónica avanzada vigente.</li>
+      <li>Presentar la constancia de cumplimiento de las obligaciones fiscales, prevista en el artículo 32-Ddel Código
+        Fiscal de la Federación.</li>
+      <li>Los demás requisitos establecidos en las Reglas que al efecto emita el Servicio de Administracion Tributaria.
+      </li>
+    </ol>
+  </div>
+</div>
+
+<!--  pop 13 -->
+<div class="pop8" (click)="pop8 = !pop8" *ngIf="pop8" [@fadeInOut]>
+  <div class="contenedorA" (click)="noClose($event)">
+    <i class="fa-solid fa-xmark" (click)="pop8 = !pop8"></i>
+    <ol id="lista">
+      <li>Su descripción, estado y origen. </li>
+      <li>Su valor en aduana, así como el método de valoración utilizado y, en su caso, la existencia de vinculaciones a
+        que se refiere el artículo 68 de esta Ley en el caso de importación, o el valor comercial tratándose de
+        exportación. </li>
+      <li>Su clasificación arancelaria y el número de identificación comercial. </li>
+      <li>El monto de las contribuciones causadas con motivo de su importación o exportación y, en su caso, las cuotas
+        compensatorias.</li>
+    </ol>
   </div>
 </div>

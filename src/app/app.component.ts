@@ -32,9 +32,15 @@ export class AppComponent implements AfterViewInit {
   pop3: boolean = false
   //pop dia 2
   pop4: boolean = false
+  //pop dia 11
+  pop5: boolean = false
+  pop6: boolean = false
+  pop7: boolean = false
+  //pop dia 14
+  pop8: boolean = false
 
   constructor() {
-    for (let i = 1; i <= 12; i++) { //agrego audios
+    for (let i = 1; i <= 21; i++) { //agrego audios
       const audio = new Audio(`assets/${i}.m4a`);
       this.audios.push(audio);
     }
@@ -59,7 +65,7 @@ export class AppComponent implements AfterViewInit {
       document.getElementById("home")?.classList.remove("dontShow")
 
       //initial - reinicia audios
-      for (let i = 0; i < 12; i++) {
+      for (let i = 0; i < 21; i++) {
         if (this.audios[i].played) {
           this.audios[i].currentTime = 0
           this.audios[i].pause()
@@ -67,7 +73,7 @@ export class AppComponent implements AfterViewInit {
       }
 
       //animacion de botones
-      for (let i = 0; i < 10; i++) {
+      for (let i = 0; i < 41; i++) {
         document.getElementById("anim" + i)?.classList.add("rebote");
       }
 
@@ -128,7 +134,53 @@ export class AppComponent implements AfterViewInit {
         this.audios[11].play()
       }
 
-      //console.log('Evento slidechanged h:', event['indexh']);
+      if (evento['indexh'] === 11 && evento['indexv'] === 0) {
+        this.audios[12].volume = 0.2
+        this.audios[12].play()
+      }
+
+      if (evento['indexh'] === 11 && evento['indexv'] === 1) {
+        this.audios[13].volume = 0.2
+        this.audios[13].play()
+      }
+
+      if (evento['indexh'] === 11 && evento['indexv'] === 2) {
+        this.audios[14].volume = 0.2
+        this.audios[14].play()
+      }
+
+      if (evento['indexh'] === 11 && evento['indexv'] === 3) {
+        this.audios[15].volume = 0.2
+        this.audios[15].play()
+      }
+
+      if (evento['indexh'] === 11 && evento['indexv'] === 4) {
+        this.audios[16].volume = 0.2
+        this.audios[16].play()
+      }
+
+      if (evento['indexh'] === 11 && evento['indexv'] === 5) {
+        this.audios[17].volume = 0.2
+        this.audios[17].play()
+      }
+
+      if (evento['indexh'] === 11 && evento['indexv'] === 6) {
+        this.audios[18].volume = 0.2
+        this.audios[18].play()
+      }
+
+      if (evento['indexh'] === 11 && evento['indexv'] === 7) {
+        this.audios[19].volume = 0.2
+        this.audios[19].play()
+      }
+
+      if (evento['indexh'] === 11 && evento['indexv'] === 8) {
+        this.audios[20].volume = 0.2
+        this.audios[20].play()
+      }
+
+
+
       Reveal.addEventListener('fragmentshown', event => { //al entrar
         //console.log(event.fragment.dataset.fragmentIndex)
         console.log("Presentacion: " + evento['indexh'] + ", Fragmento: " + event.fragment.dataset.fragmentIndex)
@@ -141,14 +193,12 @@ export class AppComponent implements AfterViewInit {
           if (event.fragment.dataset.fragmentIndex === "0") {
             this.audios[1].pause()
             this.audios[1].currentTime = 0
-            console.log("entrada1")
             this.audios[2].volume = 0.2
             this.audios[2].play()
           }
           if (event.fragment.dataset.fragmentIndex === "1") {
             this.audios[2].pause()
             this.audios[2].currentTime = 0
-            console.log("entrada2")
             this.audios[3].volume = 0.2
             this.audios[3].play()
           }
