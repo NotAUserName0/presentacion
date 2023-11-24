@@ -40,7 +40,7 @@ export class AppComponent implements AfterViewInit {
   pop8: boolean = false
 
   constructor() {
-    for (let i = 1; i <= 41; i++) { //agrego audios
+    for (let i = 1; i <= 50; i++) { //agrego audios
       const audio = new Audio(`assets/${i}.m4a`);
       this.audios.push(audio);
     }
@@ -65,7 +65,7 @@ export class AppComponent implements AfterViewInit {
       document.getElementById("home")?.classList.remove("dontShow")
 
       //initial - reinicia audios
-      for (let i = 0; i < 41; i++) {
+      for (let i = 0; i < 50; i++) {
         if (this.audios[i].played) {
           this.audios[i].currentTime = 0
           this.audios[i].pause()
@@ -277,6 +277,11 @@ export class AppComponent implements AfterViewInit {
       if (evento['indexh'] === 16 && evento['indexv'] === 1) {
         this.audios[40].volume = 0.2
         this.audios[40].play()
+      }
+
+      if (evento['indexh'] === 17 && evento['indexv'] === 0) {
+        this.audios[41].volume = 0.2
+        this.audios[41].play()
       }
 
 

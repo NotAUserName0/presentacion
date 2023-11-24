@@ -197,14 +197,14 @@
           <img src="assets/16.webp" alt="">
           <div class="center">
             <ol start="8" id="opc">
-              <li> Pago de las contribuciones, y aprovechamientos en los bancos autorizados</li>
-              <li> Arribo de la mercancía a territorio nacional por lugar autorizado</li>
-              <li> Presentar la mercancía ante el mecanismo de selección automatizado</li>
-              <li> Si corresponde reconocimiento aduanero se debe practicar la verificación</li>
-              <li> En caso de incidencia, proceder a la determinación de contribuciones y multas, al embargo o retención
+              <li (click)="goToSlide(11,0)"> Pago de las contribuciones, y aprovechamientos en los bancos autorizados</li>
+              <li (click)="goToSlide(11,0)"> Arribo de la mercancía a territorio nacional por lugar autorizado</li>
+              <li (click)="goToSlide(11,0)"> Presentar la mercancía ante el mecanismo de selección automatizado</li>
+              <li (click)="goToSlide(11,0)"> Si corresponde reconocimiento aduanero se debe practicar la verificación</li>
+              <li (click)="goToSlide(11,0)"> En caso de incidencia, proceder a la determinación de contribuciones y multas, al embargo o retención
               </li>
-              <li> De no existir irregularidades se liberará la mercancía de inmediato</li>
-              <li>Conclusión del despacho aduanero.</li>
+              <li (click)="goToSlide(11,0)"> De no existir irregularidades se liberará la mercancía de inmediato</li>
+              <li (click)="goToSlide(11,0)">Conclusión del despacho aduanero.</li>
             </ol>
           </div>
         </div>
@@ -744,12 +744,12 @@
           </div>
         </div>
       </div>
-      <i class="fa-solid fa-play" (click)="control(5)"></i>
+      <i class="fa-solid fa-play" (click)="control(41)"></i>
       <i class="fa-solid fa-circle-arrow-left" id="anim36" (click)="goToSlide(9,0)"></i>
     </section>
 
     <!-- 18 -->
-
+    
 
   </div>
 </div>
@@ -820,7 +820,7 @@
 
 <!-- Pop's diapositiva 11 -->
 <div class="pop5" (click)="pop5 = !pop5" *ngIf="pop5" [@fadeInOut]>
-  <div class="contenedorB" (click)="noClose($event)">
+  <div class="contenedorA" (click)="noClose($event)">
     <i class="fa-solid fa-xmark" (click)="pop5 = !pop5"></i>
     <ol id="lista">
       <li>Estar inscrito y activo en el registro federal de contribuyentes.</li>
@@ -849,7 +849,7 @@
 </div>
 
 <div class="pop7" (click)="pop7 = !pop7" *ngIf="pop7" [@fadeInOut]>
-  <div class="contenedorB" (click)="noClose($event)">
+  <div class="contenedorA" (click)="noClose($event)">
     <i class="fa-solid fa-xmark" (click)="pop7 = !pop7"></i>
     <ol id="lista">
       <li>Estar inscrito y activo en el registro federal de contribuyentes.</li>
