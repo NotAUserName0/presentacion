@@ -90,7 +90,7 @@ i {
 }
 
 /* POP */
-.pop1 , .pop2, .pop3, .pop4, .pop5, .pop6, .pop7, .pop8{
+.pop1 , .pop2, .pop3, .pop4, .pop5, .pop6, .pop7, .pop8, .pop9, .pop10{
   position: absolute;
   z-index: 10;
   background: rgba(0, 0, 0, 0.51);
@@ -272,6 +272,11 @@ img:hover{
 #img-title{
   width: 500px;
   height: 300px;
+}
+
+#img-text{
+  width: 400px;
+  height: 200px;
 }
 
 

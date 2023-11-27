@@ -197,20 +197,24 @@
           <img src="assets/16.webp" alt="">
           <div class="center">
             <ol start="8" id="opc">
-              <li (click)="goToSlide(11,0)"> Pago de las contribuciones, y aprovechamientos en los bancos autorizados</li>
-              <li (click)="goToSlide(11,0)"> Arribo de la mercancía a territorio nacional por lugar autorizado</li>
-              <li (click)="goToSlide(11,0)"> Presentar la mercancía ante el mecanismo de selección automatizado</li>
-              <li (click)="goToSlide(11,0)"> Si corresponde reconocimiento aduanero se debe practicar la verificación</li>
-              <li (click)="goToSlide(11,0)"> En caso de incidencia, proceder a la determinación de contribuciones y multas, al embargo o retención
+              <li (click)="goToSlide(18,0)"> Pago de las contribuciones, y aprovechamientos en los bancos autorizados
               </li>
-              <li (click)="goToSlide(11,0)"> De no existir irregularidades se liberará la mercancía de inmediato</li>
-              <li (click)="goToSlide(11,0)">Conclusión del despacho aduanero.</li>
+              <li (click)="goToSlide(19,0)"> Arribo de la mercancía a territorio nacional por lugar autorizado</li>
+              <li (click)="goToSlide(20,0)"> Presentar la mercancía ante el mecanismo de selección automatizado</li>
+              <li (click)="goToSlide(21,0)"> Si corresponde reconocimiento aduanero se debe practicar la verificación
+              </li>
+              <li (click)="goToSlide(22,0)"> En caso de incidencia, proceder a la determinación de contribuciones y
+                multas, al embargo o retención
+              </li>
+              <li (click)="goToSlide(23,0)"> De no existir irregularidades se liberará la mercancía de inmediato</li>
+              <li (click)="goToSlide(24,0)">Conclusión del despacho aduanero.</li>
             </ol>
           </div>
         </div>
       </div>
       <i class="fa-solid fa-play" (click)="control(11)"></i>
-      <i class="fa-solid fa-circle-arrow-left" id="anim9" (click)="goToSlide(9,0)"></i>
+      <i class="fa-solid fa-circle-arrow-left" (click)="goToSlide(9,0)"></i>
+      <i class="fa-solid fa-circle-arrow-right" id="anim53" (click)="goToSlide(25,0)"></i>
     </section>
 
     <!--SECCIONES DE ETAPAS-->
@@ -749,7 +753,299 @@
     </section>
 
     <!-- 18 -->
-    
+    <section>
+      <div class="diapositiva-text">
+        <div class="center">
+          <strong>Artículo 83 de la Ley Aduanera</strong>
+          Las contribuciones se pagarán por los importadores y exportadores al presentar el pedimento para su trámite
+          en las oficinas autorizadas, antes de que se active el mecanismo de selección automatizado. Dichos pagos se
+          deberán efectuar en cualquiera de los medios que mediante reglas establezca la Secretaría. El pago en ningún
+          caso exime del cumplimiento de las obligaciones en materia de regulaciones y restricciones no arancelarias.
+        </div>
+      </div>
+      <i class="fa-solid fa-play" (click)="control(42)"></i>
+      <i class="fa-solid fa-circle-arrow-left" id="anim50" (click)="goToSlide(10,0)"></i>
+    </section>
+
+    <!-- 19 -->
+    <section>
+      <div class="diapositiva-text">
+        <div class="center">
+          <strong>Para la entrada o salida de mercancías (Artículo 10, primer párrafo de la Ley Aduanera)</strong>
+          Lugares autorizados (Artículo 9 fracción I del Reglamento de la Ley Aduanera):
+          <li>Aduanas (50 Aduanas)</li>
+          <li>Secciones aduaneras (Apéndice 1, Anexo 22 de las Reglas Generales de Comercio Exterior)</li>
+          <li>Aeropuertos internacionales</li>
+          <li>Cruces fronterizos autorizados</li>
+          <li>Puertos y terminales ferroviarias</li>
+
+        </div>
+      </div>
+      <i class="fa-solid fa-play" (click)="control(43)"></i>
+      <i class="fa-solid fa-circle-arrow-left" id="anim51" (click)="goToSlide(10,0)"></i>
+    </section>
+
+    <!-- 20 -->
+    <section>
+      <div class="diapositiva-text">
+        <div class="center">
+          El mecanismo de selección automatizado es el mecanismo que determinará si las mercancías se someterán a
+          reconocimiento aduanero.
+          Una vez realizado el pago de las contribuciones de comercio exterior, se presenta la mercancía junto con el
+          <a href="#/6">DODA</a> o <a href="#/7">PITA</a> ante el módulo del mecanismo de selección automatizado
+          (semáforo fiscal) en las instalaciones de
+          la aduana.
+          Una vez que se activa el mecanismo, ya sea con DODA o PITA , este arrojara un resultado: reconocimiento
+          aduanero o desaduanamiento libre.
+
+        </div>
+      </div>
+      <i class="fa-solid fa-play" (click)="control(44)"></i>
+      <i class="fa-solid fa-circle-arrow-left" id="anim52" (click)="goToSlide(10,0)"></i>
+    </section>
+
+    <!-- 21 -->
+    <section>
+      <!-- 21.0 -->
+      <section>
+        <div class="diapositiva-text">
+          <div class="center">
+            El reconocimiento aduanero es la revisión <a (click)="pop9 = !pop9">documental</a> y examen de las
+            mercancías de importación, así como de
+            sus muestras, para allegarse de los elementos que permitan a las autoridades aduaneras, cerciorarse de la
+            veracidad de lo declarado, ante la autoridad aduanera, así como del cumplimiento de las disposiciones que
+            gravan y regulan la entrada o salida de mercancías del territorio nacional. (Artículo 2, fracción XV y 43 de
+            la Ley Aduanera).
+          </div>
+        </div>
+        <i class="fa-solid fa-play" (click)="control(45)"></i>
+        <i class="fa-solid fa-circle-arrow-left" (click)="goToSlide(10,0)"></i>
+        <i class="fa-solid fa-circle-arrow-right" id="anim53" (click)="goToSlide(21,1)"></i>
+      </section>
+      <!-- 21.1 -->
+      <section>
+        <div class="diapositiva-text">
+          <div class="center">
+            <li>El reconocimiento aduanero se practica en el recinto fiscal (la aduana) por funcionarios de la Agencia
+              Nacional de Aduanas de México denominados verificadores aduanales, los cuales son asignados de manera
+              aleatoria para la <a (click)="pop10 = !pop10">revisión</a> de las mercancías mediante el sistema.</li>
+            <li>Durante el reconocimiento aduanero el verificador podrá solicitar que bajen las mercancías del medio de
+              transporte para revisar sus características físicas a efecto de constatar que la fracción arancelaria
+              declarada en el pedimento sea correcta; revisará la documentación anexa al pedimento que fue transmitida
+              de
+              manera electrónica para constatar que sea congruente y ampare la mercancía que se presenta; verificará que
+              se cumpla con las regulaciones y restricciones no arancelarias correspondientes para que la mercancía
+              puedan
+              importarse y finalmente, comprobará que se hayan pagado de manera correcta las contribuciones aplicables.
+            </li>
+          </div>
+        </div>
+        <i class="fa-solid fa-play" (click)="control(46)"></i>
+        <i class="fa-solid fa-circle-arrow-left" (click)="goToSlide(21,0)"></i>
+        <i class="fa-solid fa-circle-arrow-right" id="anim41" (click)="goToSlide(21,2)"></i>
+      </section>
+      <!-- 21.2 -->
+      <section>
+        <div class="diapositiva-text">
+          <div class="center">
+            <li>
+              En aquellos casos en los que por las características de la mercancía ésta sea de difícil identificación
+              y no se tenga certeza respecto a la clasificación arancelaria (ejemplo: productos químicos, textiles,
+              etc.) la autoridad podrá tomar una muestra de la mercancía para enviarla a un laboratorio de la ANAM, con
+              la finalidad de que sea analizada y se pueda determinar la fracción correspondiente.
+            </li>
+          </div>
+        </div>
+        <i class="fa-solid fa-play" (click)="control(47)"></i>
+        <i class="fa-solid fa-circle-arrow-left" (click)="goToSlide(21,1)"></i>
+        <i class="fa-solid fa-reply-all" id="anim42" (click)="goToSlide(21,0)"></i>
+      </section>
+    </section>
+
+    <!-- 22 -->
+    <section>
+      <!-- 22.0 -->
+      <section>
+        <div class="diapositiva-text">
+          <div class="center">
+            Cuando las autoridades aduaneras con motivo de la revisión de las declaraciones electrónicas efectuadas y de
+            los documentos electrónicos o digitales transmitidos, y presentados ante las mismas; del reconocimiento
+            aduanero; de la inspección o de la verificación de mercancías en transporte, tengan conocimiento de
+            cualquier
+            irregularidad, la misma se hará constar en documento que para el efecto se levante, de conformidad con el
+            procedimiento que corresponda, en los términos de los artículos 150 a 153 de esta Ley. <span
+              class="destacar">(Artículo 46 de la Ley
+              Aduanera)</span> <br> <br>
+            Los Procedimientos Administrativos en Materia Aduanera puede ser de tres tipos a saber:
+          </div>
+        </div>
+        <i class="fa-solid fa-play" (click)="control(48)"></i>
+        <i class="fa-solid fa-circle-arrow-left" (click)="goToSlide(10,0)"></i>
+        <i class="fa-solid fa-circle-arrow-right" id="anim43" (click)="goToSlide(22,1)"></i>
+      </section>
+      <!-- 22.1 -->
+      <section>
+        <div class="diapositiva-text">
+          <div class="center">
+            <ol>
+              <li>
+                Procedimiento Administrativo en Materia Aduanera, que se inicia conforme a lo dispuesto por los
+                artículos 150 y 153 de la Ley Aduanera, por haberse incurrido en una de las causales de embargo
+                previstas por el artículo 151 de la Ley Aduanera, dicho procedimiento se instaura a través de un Acta de
+                Inicio con la que se dan a conocer al interesado las irregulares detectadas en el despacho aduanero y se
+                embarga precautoriamente la mercancía, hasta en tanto el importador y/o Agente Aduanal solventan la
+                irregularidad detectada dentro del plazo de 10 días otorgado para el ofrecimiento de pruebas y expresión
+                de alegatos.
+              </li>
+            </ol>
+          </div>
+        </div>
+        <i class="fa-solid fa-play" (click)="control(49)"></i>
+        <i class="fa-solid fa-circle-arrow-left" (click)="goToSlide(22,0)"></i>
+        <i class="fa-solid fa-circle-arrow-right" id="anim47" (click)="goToSlide(22,2)"></i>
+      </section>
+      <!-- 22.2 -->
+      <section>
+        <div class="diapositiva-text">
+          <div class="center">
+            <ol start="2">
+              <li>
+                Procedimiento Administrativo en Materia Aduanera, que se inicia conforme a lo dispuesto por el
+                artículo 152 de la Ley Aduanera, por no haberse incurrido en una de las causales de embargo previstas
+                por el artículo 151 de la Ley Aduanera, dicho procedimiento se instaura a través de un Acta
+                Circunstanciada de Hechos, esto en el caso de que la mercancía se encuentre a disposición de la
+                autoridad aduanera, o bien, con un Escrito de Hechos u Omisiones, en el caso de que la mercancía hubiera
+                sido previamente liberada por la autoridad aduanera, ambas documentales con las que se dan a conocer al
+                interesado las irregulares detectadas en el despacho aduanero, sin que exista embargo de la mercancía,
+                determinándose presuntivamente la omisión de contribuciones y multas, otorgándose al importador y/o
+                Agente Aduanal el plazo de 10 días para el ofrecimiento de pruebas y expresión de alegatos con los que
+                se desvirtúen las infracciones detectadas.
+              </li>
+            </ol>
+          </div>
+        </div>
+        <i class="fa-solid fa-play" (click)="control(50)"></i>
+        <i class="fa-solid fa-circle-arrow-left" (click)="goToSlide(22,1)"></i>
+        <i class="fa-solid fa-circle-arrow-right" id="anim48" (click)="goToSlide(22,3)"></i>
+      </section>
+      <!-- 22.3 -->
+      <section>
+        <div class="diapositiva-text">
+          <div class="center">
+            <ol start="3">
+              <li>
+                Procedimiento Administrativo en Materia Aduanera, que se inicia conforme a lo dispuesto por el
+                artículo 152 de la Ley Aduanera, por no haberse incurrido en una de las causales de embargo previstas
+                por el artículo 151 de la Ley Aduanera, dicho procedimiento se instaura a través de un Acta
+                Circunstanciada de Hechos, esto en el caso de que la mercancía se encuentre a disposición de la
+                autoridad aduanera, o bien, con un Escrito de Hechos u Omisiones, en el caso de que la mercancía hubiera
+                sido previamente liberada por la autoridad aduanera, ambas documentales con las que se dan a conocer al
+                interesado las irregulares detectadas en el despacho aduanero, sin que exista embargo de la mercancía,
+                determinándose presuntivamente la omisión de contribuciones y multas, otorgándose al importador y/o
+                Agente Aduanal el plazo de 10 días para el ofrecimiento de pruebas y expresión de alegatos con los que
+                se desvirtúen las infracciones detectadas.
+              </li>
+            </ol>
+          </div>
+        </div>
+        <i class="fa-solid fa-play" (click)="control(51)"></i>
+        <i class="fa-solid fa-circle-arrow-left" (click)="goToSlide(22,1)"></i>
+        <i class="fa-solid fa-reply-all" id="anim44" (click)="goToSlide(22,0)"></i>
+      </section>
+    </section>
+
+    <!-- 23 -->
+    <section>
+      <div class="diapositiva-text">
+        <div class="center">
+          <li>
+            Si durante la revisión la autoridad no detecta ninguna irregularidad permitirá la salida inmediata del
+            medio de transporte en el que se presenten las mercancías ante la aduana.
+          </li>
+        </div>
+      </div>
+      <i class="fa-solid fa-play" (click)="control(52)"></i>
+      <i class="fa-solid fa-circle-arrow-left" id="anim45" (click)="goToSlide(10,0)"></i>
+    </section>
+
+    <!-- 24 -->
+    <section>
+      <div class="diapositiva-text">
+        <div class="center">
+          <li>
+            Una vez que la mercancía ha cumplido con las formalidades del despacho aduanero, con o sin reconocimiento
+            aduanero, se podrá retirar la mercancía de la aduana.
+          </li>
+        </div>
+      </div>
+      <i class="fa-solid fa-play" (click)="control(53)"></i>
+      <i class="fa-solid fa-circle-arrow-left" id="anim46" (click)="goToSlide(10,0)"></i>
+    </section>
+
+    <!-- 25 -->
+    <section>
+      <div class="diapositiva-text">
+        <br>
+        <div class="img-text">
+          <img src="assets/17.webp" alt="">
+          <div class="center">
+            Las autoridades aduaneras, en ejercicio de sus facultades, podrán emplear los sistemas, equipos
+            tecnológicos, cualquier otro medio o servicio con que se cuente y que facilite el reconocimiento, la
+            inspección o la verificación de las mercancías; a estos se les denomina medios no intrusivos para la
+            revisión de las mercancías y consisten en rayos x, rayos gamma y binomios caninos.
+            <br> <br>
+            <span class="destacar">PARA EJERCER FACULTADES DE COMPROBACION (ARTÍCULO 18 PRIMERA PARTE DE LA LEY
+              ADUANERA)</span>
+
+          </div>
+        </div>
+      </div>
+      <i class="fa-solid fa-play" (click)="control(54)"></i>
+      <i class="fa-solid fa-circle-arrow-left" (click)="goToSlide(10,0)"></i>
+      <i class="fa-solid fa-circle-arrow-right" id="anim54" (click)="goToSlide(26,0)"></i>
+    </section>
+
+    <!-- 26 -->
+    <section>
+      <div class="diapositiva-text">
+        <div class="center">
+          Las 24 horas del día y todos los días del año serán hábiles para ejercerlas. Para verificar mercancías en
+          transporte, se consideran hábiles todos los días del año y las 24 horas del día (Artículo 13 del Código Fiscal
+          de la Federación).
+          <br> <br>
+          Las Facultades de comprobación que la autoridad puede ejercer en términos del párrafo anterior, son:
+
+        </div>
+      </div>
+      <i class="fa-solid fa-play" (click)="control(55)"></i>
+      <i class="fa-solid fa-circle-arrow-left" (click)="goToSlide(25,0)"></i>
+      <i class="fa-solid fa-circle-arrow-right" id="anim55" (click)="goToSlide(27,0)"></i>
+    </section>
+    <!-- 27 -->
+    <section>
+      <div class="diapositiva-text">
+        <br>
+        <div class="img-text">
+          <div class="center">
+            <ol>
+              <li>Visita Domiciliaria (Artículos 42, fracción V, 43 a 47 y 49 del Código Fiscal de la Federación, 49 y
+                50 del Reglamento del Código Fiscal de la Federación y 155 de la Ley Aduanera). </li>
+              <li>Revisión de Gabinete (Artículos 42, fracción II, 48, 50 y 51 del Código Fiscal de la Federación y 51
+                del Reglamento del Código Fiscal de la Federación). </li>
+              <li>Revisión Electrónica (artículos 42, fracción IX y 53-B del Código Fiscal de la Federación).</li>
+              <li>Reconocimiento Aduanero (Artículo 144, fracción VI de la Ley Aduanera). </li>
+              <li>Verificación de Mercancías en Transporte (Artículo 144, fracción XI de la Ley Aduanera).</li>
+            </ol>
+            En relación al punto 5, es importante mencionar que es factible que una vez que la mercancía se encuentre
+            fuera de la aduana le sea practicada una orden de verificación en transporte y la mercancía tenga que
+            regresar a la aduana para someterse a una revisión.
+          </div>
+        </div>
+      </div>
+      <i class="fa-solid fa-play" (click)="control(56)"></i>
+      <i class="fa-solid fa-circle-arrow-left" (click)="goToSlide(26,0)"></i>
+    </section>
+
 
   </div>
 </div>
@@ -875,5 +1171,26 @@
       <li>El monto de las contribuciones causadas con motivo de su importación o exportación y, en su caso, las cuotas
         compensatorias.</li>
     </ol>
+  </div>
+</div>
+
+<!-- pop 21 -->
+<div class="pop9" (click)="pop9 = !pop9" *ngIf="pop9" [@fadeInOut]>
+  <div class="contenedorB">
+    <i class="fa-solid fa-xmark fa-2x res" (click)="pop9 = !pop9"></i>
+    <div class="pop-body">
+      Pedimento, factura, B/L, Lista de empaque, regulaciones y restricciones no arancelarias, cumplimiento de las
+      Normas Oficiales Mexicanas, certificado de origen, Anexo 18, Garantía cuenta aduanera
+    </div>
+  </div>
+</div>
+
+<div class="pop10" (click)="pop10 = !pop10" *ngIf="pop10" [@fadeInOut]>
+  <div class="contenedorB">
+    <i class="fa-solid fa-xmark fa-2x res" (click)="pop10 = !pop10"></i>
+    <div class="pop-body">
+      Descripción y clasificación arancelaria, Normas Oficiales Mexicanas correspondientes, unidades de medida, número
+      de piezas, origen
+    </div>
   </div>
 </div>
